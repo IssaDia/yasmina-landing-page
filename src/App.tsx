@@ -1,13 +1,12 @@
-import { makeStyles } from '@mui/styles'
+import React from 'react'
+import Layout from './components/Layout'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    minHeight: '100vh',
-  },
-}))
 const App: React.FC = () => {
-  const classes = useStyles()
-  return <div className={classes.root}></div>
+  return (
+    <>
+      <Layout></Layout>
+    </>
+  )
 }
 
 export default App
