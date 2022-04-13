@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Layout: React.FC = () => {
-  return <div>layout</div>
-}
+ return <div className="container">layout</div>;
+};
 
-export default Layout
+export default Layout;
+
