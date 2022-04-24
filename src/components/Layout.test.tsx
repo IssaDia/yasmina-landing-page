@@ -2,7 +2,6 @@ import React from "react";
 import { render } from "@testing-library/react";
 import Layout from "./Layout";
 import { Navbar } from "./Navbar";
-import { shallow } from "enzyme";
 
 describe("Layout tests", () => {
  test("renders container on Layout", () => {
@@ -27,7 +26,7 @@ describe("Layout tests", () => {
   expect(container.firstChild).toHaveClass("h-screen");
  });
  test("must contains a navbar", () => {
-  const layout = shallow(<Layout />);
-  layout.contains(<Navbar />);
+  const layout = render(<Layout />);
+  expect(layout).contains(<Navbar />);
  });
 });
