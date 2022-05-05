@@ -47,8 +47,4 @@ describe("Layout tests", () => {
   );
   expect(container.firstChild).toHaveClass("h-screen");
  });
- //  it("must contains a navbar", () => {
- //   const navbar = render(<Navbar handleShow={handleCalendlyModal} />);
- //   expect(navbar).toBeTruthy();
- //  });
 });
