@@ -1,32 +1,50 @@
 import React from "react";
 import { render } from "@testing-library/react";
+import { BrowserRouter as Router } from "react-router-dom";
+
 import Layout from "./Layout";
-import { Navbar } from "./Navbar";
+// import { Navbar } from "./Navbar";
 
 describe("Layout tests", () => {
- test("renders container on Layout", () => {
-  const { container } = render(<Layout />);
+ const { container } = render(
+  <Router>
+   <Layout />
+  </Router>
+ );
+ it("renders container on Layout", () => {
   expect(container.firstChild).toHaveClass("container-fluid");
  });
 
- test("got flex disposition", () => {
-  const { container } = render(<Layout />);
+ it("got flex disposition", () => {
+  const { container } = render(
+   <Router>
+    <Layout />
+   </Router>
+  );
   expect(container.firstChild).toHaveClass("flex");
  });
- test("got column direction", () => {
-  const { container } = render(<Layout />);
+ it("got column direction", () => {
+  const { container } = render(
+   <Router>
+    <Layout />
+   </Router>
+  );
   expect(container.firstChild).toHaveClass("flex-col");
  });
- test("got the right font", () => {
-  const { container } = render(<Layout />);
+ it("got the right font", () => {
+  const { container } = render(
+   <Router>
+    <Layout />
+   </Router>
+  );
   expect(container.firstChild).toHaveClass("font-poppins");
  });
- test("takes min height", () => {
-  const { container } = render(<Layout />);
+ it("takes min height", () => {
+  const { container } = render(
+   <Router>
+    <Layout />
+   </Router>
+  );
   expect(container.firstChild).toHaveClass("h-screen");
- });
- test("must contains a navbar", () => {
-  const layout = render(<Layout />);
-  expect(layout).contains(<Navbar />);
  });
 });
