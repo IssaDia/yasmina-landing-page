@@ -63,7 +63,7 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
      <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center justify-center items-center m-8 flex flex-col lg:h-auto">
       <Nav />
       <button
-       onClick={() => props.handleShow}
+       onClick={() => props.handleShow()}
        className="text-sm text-white hover:text-orange font-bold bg-orange hover:bg-white border-2 hover:border-orange rounded-3xl p-2"
       >
        Réserver un entretien gratuit

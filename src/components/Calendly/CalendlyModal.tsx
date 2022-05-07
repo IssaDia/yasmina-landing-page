@@ -14,7 +14,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = (props: {
  return (
   <>
    <div
-    onClick={() => props.handleShow}
+    onClick={() => props.handleShow()}
     className="w-full h-full bg-black opacity-75 cursor-pointer fixed z-20"
    ></div>
    <div className="w-full h-full flex items-center absolute justify-center">
@@ -22,7 +22,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = (props: {
      className={`${showModal} z-20 fixed h-[480px] flex flex-col shadow-xl bg-white`}
     >
      <div
-      onClick={() => props.handleShow}
+      onClick={() => props.handleShow()}
       className="cursor-pointer text-black rounded-lg self-end text-6xl mr-10"
      >
       x
