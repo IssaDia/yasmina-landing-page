@@ -23,3 +23,11 @@ EsLint, Prettier
 ### Tests
 
 Jest, Cypress
+
+### Project Management
+
+Github's Kanban
+
+### CI
+
+Github actions
