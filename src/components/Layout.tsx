@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CalendlyModal } from "./Calendly/CalendlyModal";
+import Jumbotron from "./Jumbotron";
 import { Navbar } from "./Navbar";
 
 const Layout: React.FC = () => {
@@ -18,6 +19,7 @@ const Layout: React.FC = () => {
      handleShow={handleCalendlyModal}
     />
    )}
+   <Jumbotron />
   </div>
  );
 };
