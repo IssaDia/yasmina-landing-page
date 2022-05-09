@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+ font-family: "Playlist";
+ src: url("./assets/fonts/Playlist-Script.woff2") format("woff2"),
+  url("./assets/fonts/Playlist-Script.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}
+
+@font-face {
+ font-family: "Lora";
+ src: url("./assets/fonts/Lora.woff2") format("woff2"),
+  url("./assets/fonts/Lora.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}

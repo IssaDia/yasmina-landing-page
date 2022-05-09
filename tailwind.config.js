@@ -86,9 +86,7 @@ module.exports = {
   backdropSepia: (theme) => theme("sepia"),
   backgroundColor: (theme) => theme("colors"),
   backgroundImage: {
-   "home-hero": "url('/images/bandeau-site.svg')",
-   "icon-carousel-previous": "url('/images/icon_carousel_prev.png')",
-   "icon-carousel-next": "url('/images/icon_carousel_next.png')",
+   "home-hero": "url('/src/assets/images/bandeau-site.svg')",
    none: "none",
    "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
    "gradient-to-tr": "linear-gradient(to top right, var(--tw-gradient-stops))",
