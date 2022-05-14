@@ -7,7 +7,7 @@ on:
   branches: "*"
 
 jobs:
- cypress-run:
+ install:
   runs-on: ubuntu-latest
   steps:
    - name: Checkout
