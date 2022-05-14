@@ -19,5 +19,11 @@ jobs:
       - name: Install dependencies
           run:  yarn install --frozen-lockfile  
       - name: Cypress run
-        uses: cypress-io/github-action@v2
-          start: yarn install --frozen-lockfile
+       uses: cypress-io/github-action@v3
+       with:
+        project: ./yasmina-landing-page
+        browser: chrome
+        build: yarn build
+        start: yarn start
+       # start: yarn install --frozen-lockfile
+        wait-on: "http://localhost:3000"
