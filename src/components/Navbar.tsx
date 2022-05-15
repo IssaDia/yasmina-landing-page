@@ -38,6 +38,7 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
     </Link>
     <button
      className=" inline-flex p-3 rounded lg:hidden text-black ml-auto hover:text-black outline-none"
+     data-test="navbarBurger"
      onClick={handleNavbar}
     >
      <svg
@@ -64,10 +65,17 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
       <Nav />
       <button
        onClick={() => props.handleShow()}
+       data-test="showCalendlyModal"
        className="text-sm text-white hover:text-orange font-bold bg-orange hover:bg-white border-2 hover:border-orange rounded-3xl p-2"
       >
        Réserver un entretien gratuit
       </button>
+      {/* <button
+       onClick={() => props.handleShow()}
+       className="text-sm text-white hover:text-orange font-bold bg-orange hover:bg-white border-2 hover:border-orange rounded-3xl p-2"
+      >
+       Réserver un entretien gratuit
+      </button> */}
      </div>
     </div>
    </nav>

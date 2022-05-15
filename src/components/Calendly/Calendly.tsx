@@ -14,9 +14,8 @@ export const Calendly: React.FC = () => {
   <div>
    <div id="schedule_form">
     <div
-     className="calendly-inline-widget"
+     className="calendly-inline-widget sm:w-full h-screen"
      data-url="https://calendly.com/issadia"
-     style={{ minWidth: "620px", height: "480px" }}
     />
     <script
      type="text/javascript"
