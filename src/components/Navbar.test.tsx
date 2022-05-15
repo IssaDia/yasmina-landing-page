@@ -4,13 +4,10 @@ import { Navbar } from "./Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
 
 describe("Navbar tests", () => {
+ const handleShow = jest.fn();
  const { container } = render(
   <Router>
-   <Navbar
-    handleShow={function (): void {
-     throw new Error("Function not implemented.");
-    }}
-   />
+   <Navbar handleShow={handleShow} />
   </Router>
  );
  const navbar = container.querySelector("nav");
