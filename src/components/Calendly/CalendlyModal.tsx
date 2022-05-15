@@ -11,7 +11,6 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = (props: {
  handleShow: () => void;
 }) => {
  const showModal = props.show ? "visible" : "invisible";
- console.log(showModal);
 
  return (
   <>
@@ -21,12 +20,13 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = (props: {
    ></div>
    <div className="w-full h-full flex items-center absolute justify-center">
     <div
-     className={`${showModal} z-20 fixed h-[480px] flex flex-col shadow-xl bg-white`}
+     className={`${showModal} z-20 fixed sm:w-1/2 h-screen flex flex-col shadow-xl bg-white`}
      data-test="calendlyModal"
     >
      <div
       onClick={() => props.handleShow()}
       className="cursor-pointer text-black rounded-lg self-end text-6xl mr-10"
+      data-test="closeModal"
      >
       x
      </div>
