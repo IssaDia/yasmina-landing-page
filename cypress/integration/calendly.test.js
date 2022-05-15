@@ -7,10 +7,8 @@ describe("User want to make an apointment on Calendly ", () => {
    cy.viewport(1280, 720);
   });
   it("shows the calendly interface on computer screen then closes it", () => {
-   cy.get('[data-test="showCalendlyModal"').click();
-   cy.get('[data-test="calendlyModal"').should("exist");
-   cy.get('[data-test="closeModal"').click();
-   cy.get('[data-test="calendlyModal"').should("not.exist");
+   cy.openCalendlyModal();
+   cy.closeCalendlyModal();
   });
  });
 
@@ -19,11 +17,9 @@ describe("User want to make an apointment on Calendly ", () => {
    cy.viewport(768, 1024);
   });
   it("shows the calendly interface on computer screen then closes it", () => {
-   cy.get('[data-test="navbarBurger"').click();
-   cy.get('[data-test="showCalendlyModal"').click();
-   cy.get('[data-test="calendlyModal"').should("exist");
-   cy.get('[data-test="closeModal"').click();
-   cy.get('[data-test="calendlyModal"').should("not.exist");
+   cy.openNavBurger();
+   cy.openCalendlyModal();
+   cy.closeCalendlyModal();
   });
  });
 
@@ -32,11 +28,9 @@ describe("User want to make an apointment on Calendly ", () => {
    cy.viewport(375, 812);
   });
   it("shows the calendly interface on mobile screen then closes it", () => {
-   cy.get('[data-test="navbarBurger"').click();
-   cy.get('[data-test="showCalendlyModal"').click();
-   cy.get('[data-test="calendlyModal"').should("exist");
-   cy.get('[data-test="closeModal"').click();
-   cy.get('[data-test="calendlyModal"').should("not.exist");
+   cy.openNavBurger();
+   cy.openCalendlyModal();
+   cy.closeCalendlyModal();
   });
  });
 });
