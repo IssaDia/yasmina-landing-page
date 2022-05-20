@@ -1,14 +1,9 @@
 import React, { useEffect } from "react";
+import { handleCalendlyscriptCall } from "./utils/handleCalendlyscriptCall";
 
-export const Calendly: React.FC = () => {
+export const CalendlyModule: React.FC = () => {
  useEffect(() => {
-  const head = document.querySelector("head");
-  const script = document.createElement("script");
-  script.setAttribute(
-   "src",
-   "https://assets.calendly.com/assets/external/widget.js"
-  );
-  head && head.appendChild(script);
+  handleCalendlyscriptCall();
  }, []);
  return (
   <div>

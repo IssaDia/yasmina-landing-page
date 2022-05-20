@@ -1,5 +1,6 @@
 import React from "react";
-import { Calendly } from "./Calendly";
+import { CalendlyModalCloseButton } from "./CalendlyModalCloseButton";
+import { CalendlyModule } from "./CalendlyModule";
 
 interface CalendlyModalProps {
  show: boolean;
@@ -23,15 +24,9 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = (props: {
      className={`${showModal} z-20 fixed sm:w-1/2 h-screen flex flex-col shadow-xl bg-white`}
      data-test="calendlyModal"
     >
-     <div
-      onClick={() => props.handleShow()}
-      className="cursor-pointer text-black rounded-lg self-end text-6xl mr-10"
-      data-test="closeModal"
-     >
-      x
-     </div>
+     <CalendlyModalCloseButton handleCloseModal={() => props.handleShow()} />
      <div className="self-center">
-      <Calendly />
+      <CalendlyModule />
      </div>
     </div>
    </div>

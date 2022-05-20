@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Jumbotron from "./Jumbotron";
+import Jumbotron from "./index";
 
 describe("jumbotron tests", () => {
  beforeEach(() => {
