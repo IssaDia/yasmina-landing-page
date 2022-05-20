@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import Layout from "./Layout";
+import Layout from "./index";
 // import { Navbar } from "./Navbar";
 
 describe("Layout tests", () => {

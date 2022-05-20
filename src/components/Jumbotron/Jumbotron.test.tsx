@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Jumbotron from "./Jumbotron";
+import Jumbotron from "./index";
 
 describe("jumbotron tests", () => {
  beforeEach(() => {
@@ -19,14 +19,7 @@ describe("jumbotron tests", () => {
   const imgElement = screen.getByRole("jumbotronImage");
   expect(imgElement).toHaveAttribute("alt");
  });
- it("has  a specific width in image", () => {
-  const imgElement = screen.getByRole("jumbotronImage");
-  expect(imgElement).toHaveClass("w-64");
- });
- it("has a specific height in image", () => {
-  const imgElement = screen.getByRole("jumbotronImage");
-  expect(imgElement).toHaveClass("h-64");
- });
+
  it("has a source in image", () => {
   const imgElement = screen.getByRole("jumbotronImage");
   expect(imgElement).toHaveAttribute("src");
