@@ -1,9 +1,9 @@
-import { CalendlyModalOpenButton } from "./../Calendly/CalendlyModalOpenButton";
 import { NavbarBurger } from "./NavbarBurger";
 import React, { useState } from "react";
 import { useHandleNavbarScrollingOnStart } from "../../hooks/useHandleNavbarScrollingOnStart";
 import { Logo } from "./Logo";
 import { Nav } from "./Nav";
+import { Button } from "../atoms/Button/index";
 
 interface CalendlyHandleModalProps {
  handleShow: () => void;
@@ -19,6 +19,8 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
  const handleNavbar = () => {
   setNavIsOpened((prev) => !prev);
  };
+
+ console.count("rerender");
 
  return (
   <>
@@ -36,7 +38,25 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
     >
      <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center justify-center items-center m-8 flex flex-col lg:h-auto">
       <Nav />
-      <CalendlyModalOpenButton handleOpenModal={() => props.handleShow()} />
+      <Button
+       //    borderRadius="rounded-3xl"
+       //    fontSize="text-sm"
+       //    textColor="text-white"
+       //    fontWeight="font-bold"
+       //    backgroundColor="bg-orange"
+       //    borderWidth="border-2"
+       //    padding="p-2"
+       //    hover={{
+       //     textColor: " hover:text-orange",
+       //     backgroundColor: "hover:bg-white",
+       //     borderWidth: "hover:border-orange",
+       //    }}
+       //    dataTest="showCalendlyModal"
+       className="text-sm rounded-3xl bg-orange"
+       onClick={() => props.handleShow()}
+      >
+       Réserver un entretien gratuit
+      </Button>
      </div>
     </div>
    </nav>
