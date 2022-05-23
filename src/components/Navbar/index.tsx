@@ -4,6 +4,7 @@ import { useHandleNavbarScrollingOnStart } from "../../hooks/useHandleNavbarScro
 import { Logo } from "./Logo";
 import { Nav } from "./Nav";
 import { Button } from "../atoms/Button/index";
+import { cn } from "../../tailwindUtils";
 
 interface CalendlyHandleModalProps {
  handleShow: () => void;
@@ -20,7 +21,7 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
   setNavIsOpened((prev) => !prev);
  };
 
- console.count("rerender");
+ console.log(cn(`text-sm flex`));
 
  return (
   <>
@@ -52,7 +53,7 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
        //     borderWidth: "hover:border-orange",
        //    }}
        //    dataTest="showCalendlyModal"
-       className="text-sm rounded-3xl bg-orange"
+       className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl"
        onClick={() => props.handleShow()}
       >
        Réserver un entretien gratuit
