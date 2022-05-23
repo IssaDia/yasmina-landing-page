@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useHandleNavbarScrollingOnStart } from "../../hooks/useHandleNavbarScrollingOnStart";
 import { Logo } from "./Logo";
 import { Nav } from "./Nav";
-import { Button } from "../atoms/Button/index";
+import Button from "../atoms/Button/index";
 import { cn } from "../../tailwindUtils";
 
 interface CalendlyHandleModalProps {
