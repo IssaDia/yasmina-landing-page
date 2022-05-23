@@ -2,7 +2,7 @@ import React from "react";
 
 export interface Props {
  className?: string;
- dataTest?: string;
+ datatest?: string;
  children: React.ReactNode;
  onClick?: () => void;
 }
