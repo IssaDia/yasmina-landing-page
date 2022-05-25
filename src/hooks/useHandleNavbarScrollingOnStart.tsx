@@ -6,7 +6,7 @@ export const useHandleNavbarScrollingOnStart = () => {
  useEffect(() => {
   window.onscroll = () => handleNavbarScrolling();
   const handleNavbarScrolling = () => {
-   if (window.scrollY == 0) {
+   if (window.scrollY === 0) {
     setNavIsScrolling(false);
    } else {
     setNavIsScrolling(true);
