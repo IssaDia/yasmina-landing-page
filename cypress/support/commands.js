@@ -1,5 +1,5 @@
 Cypress.Commands.add("openCalendlyModal", () => {
- cy.get('[dataTest="showCalendlyModal"').click();
+ cy.get('[data-test="showCalendlyModal"').click();
  cy.get('[data-test="calendlyModal"').should("exist");
 });
 

@@ -1,50 +1,24 @@
 import React from "react";
-import { render } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
-
 import Layout from "./index";
-// import { Navbar } from "./Navbar";
+import { mount } from "enzyme";
+
+const wrapper = mount(<Layout />);
 
 describe("Layout tests", () => {
- const { container } = render(
-  <Router>
-   <Layout />
-  </Router>
- );
  it("renders container on Layout", () => {
-  expect(container.firstChild).toHaveClass("container-fluid");
+  expect(wrapper.find(".container-fluid")).toBeTruthy();
  });
 
- it("got flex disposition", () => {
-  const { container } = render(
-   <Router>
-    <Layout />
-   </Router>
-  );
-  expect(container.firstChild).toHaveClass("flex");
+ it("has a flex disposition", () => {
+  expect(wrapper.find(".flex")).toBeTruthy();
  });
- it("got column direction", () => {
-  const { container } = render(
-   <Router>
-    <Layout />
-   </Router>
-  );
-  expect(container.firstChild).toHaveClass("flex-col");
+ it("has the column direction", () => {
+  expect(wrapper.find(".flex-col")).toBeTruthy();
  });
- it("got the right font", () => {
-  const { container } = render(
-   <Router>
-    <Layout />
-   </Router>
-  );
-  expect(container.firstChild).toHaveClass("font-poppins");
+ it("has the right font", () => {
+  expect(wrapper.find(".font-poppins")).toBeTruthy();
  });
- it("takes min height", () => {
-  const { container } = render(
-   <Router>
-    <Layout />
-   </Router>
-  );
-  expect(container.firstChild).toHaveClass("h-screen");
+ it("has a min height", () => {
+  expect(wrapper.find(".h-screen")).toBeTruthy();
  });
 });

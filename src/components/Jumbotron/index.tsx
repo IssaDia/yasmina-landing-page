@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Image } from "./Image";
-import { JumbotronCatchphrase } from "./Catchphrase";
-import { JumbotronSubtitle } from "./Subtitle";
-import { JumbotronTitle } from "./Title";
+import Image from "./Image";
+import JumbotronCatchphrase from "./Catchphrase";
+import JumbotronSubtitle from "./Subtitle";
+import JumbotronTitle from "./Title";
 
 const Jumbotron: React.FC = () => {
  return (

@@ -1,27 +1,26 @@
 import React from "react";
-import { render } from "@testing-library/react";
-import { Navbar } from "./index";
-import { BrowserRouter as Router } from "react-router-dom";
+import { mount } from "enzyme";
+import Navbar from "./index";
+import { BrowserRouter } from "react-router-dom";
 
+const handleShow = jest.fn();
+const wrapper = mount(
+ <BrowserRouter>
+  <Navbar handleShow={handleShow} />
+ </BrowserRouter>
+);
 describe("Navbar tests", () => {
- const handleShow = jest.fn();
- const { container } = render(
-  <Router>
-   <Navbar handleShow={handleShow} />
-  </Router>
- );
- const navbar = container.querySelector("nav");
  it("contains nav element", () => {
-  expect(navbar).toBeInTheDocument();
+  expect(wrapper).toHaveLength(1);
  });
  it("has the right stack order", () => {
-  expect(navbar).toHaveClass("z-10");
+  expect(wrapper.find(".z-10")).toBeTruthy();
  });
  it("has a height", () => {
-  expect(navbar).toHaveClass("h-30");
+  expect(wrapper.find(".h-30")).toBeTruthy();
  });
  it("has the right element disposition", () => {
-  expect(navbar).toHaveClass("flex-shrink-0");
+  expect(wrapper.find(".flex-shrink-0")).toBeTruthy();
  });
  //  it("contains logo element", () => {
  //   const logo = container.querySelector("navbar-brand") as HTMLElement;

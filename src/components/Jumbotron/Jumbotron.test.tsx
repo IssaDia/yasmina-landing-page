@@ -1,27 +1,22 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import Jumbotron from "./index";
+import { mount } from "enzyme";
+import Image from "../Jumbotron/Image/index";
+
+const wrapper = mount(<Image />);
 
 describe("jumbotron tests", () => {
- beforeEach(() => {
-  render(<Jumbotron />);
- });
  it("must contains a picture", () => {
-  const imgElement = screen.getByRole("jumbotronImage");
-  expect(imgElement).toContainHTML("img");
+  expect(wrapper.find("img")).toBeTruthy();
  });
  it("renders a rounded picture", () => {
-  const imgElement = screen.getByRole("jumbotronImage");
-
-  expect(imgElement).toHaveClass("rounded-full");
+  expect(wrapper.find(".rounded-full")).toBeTruthy();
  });
+
  it("has alt information in image", () => {
-  const imgElement = screen.getByRole("jumbotronImage");
-  expect(imgElement).toHaveAttribute("alt");
+  expect(wrapper.find("alt")).toBeTruthy();
  });
 
  it("has a source in image", () => {
-  const imgElement = screen.getByRole("jumbotronImage");
-  expect(imgElement).toHaveAttribute("src");
+  expect(wrapper.find("src")).toBeTruthy();
  });
 });
