@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { CalendlyModal } from "./components/Calendly/index";
-import Jumbotron from "./components/Jumbotron/index";
-import { Layout } from "./components/Layout/index";
-// import { Navbar } from "./components/Navbar/index";
+import { CalendlyModal } from "./components/Calendly";
+import Jumbotron from "./components/Jumbotron";
+import Layout from "./components/Layout";
+import Reviews from "./components/Reviews/Container";
+import Navbar from "./components/Navbar";
 
 const App: React.FC = () => {
  const [calendlyModalIsActive, setCalendlyModalIsActive] =
@@ -14,7 +15,7 @@ const App: React.FC = () => {
  return (
   <>
    <Layout>
-    {/* <Navbar handleShow={handleCalendlyModal} /> */}
+    <Navbar handleShow={handleCalendlyModal} />
     {calendlyModalIsActive && (
      <CalendlyModal
       show={calendlyModalIsActive}
@@ -22,6 +23,7 @@ const App: React.FC = () => {
      />
     )}
     <Jumbotron />
+    <Reviews />
    </Layout>
   </>
  );

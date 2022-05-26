@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Layout: React.FC = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
  return (
   <>
    <div className="container-fluid flex flex-col font-poppins h-screen">

@@ -10,7 +10,7 @@ interface CalendlyHandleModalProps {
  handleShow: () => void;
 }
 
-export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
+const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
  handleShow: () => void;
 }) => {
  const navIsScrolling = useHandleNavbarScrollingOnStart();
@@ -52,3 +52,5 @@ export const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
   </>
  );
 };
+
+export default Navbar;
