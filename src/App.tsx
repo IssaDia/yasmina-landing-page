@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { CalendlyModal } from "./components/Calendly";
 import Jumbotron from "./components/Jumbotron";
-import Layout from "./components/Layout";
 import Reviews from "./components/Reviews/Container";
 import Navbar from "./components/Navbar";
+import AboutMe from "./components/AboutMe.tsx";
+import SectionTitle from "./components/atoms/SectionTitle";
 
 const App: React.FC = () => {
  const [calendlyModalIsActive, setCalendlyModalIsActive] =
@@ -14,17 +15,20 @@ const App: React.FC = () => {
  };
  return (
   <>
-   <Layout>
-    <Navbar handleShow={handleCalendlyModal} />
-    {calendlyModalIsActive && (
-     <CalendlyModal
-      show={calendlyModalIsActive}
-      handleShow={handleCalendlyModal}
-     />
-    )}
-    <Jumbotron />
-    <Reviews />
-   </Layout>
+   <Navbar handleShow={handleCalendlyModal} />
+   {calendlyModalIsActive && (
+    <CalendlyModal
+     show={calendlyModalIsActive}
+     handleShow={handleCalendlyModal}
+    />
+   )}
+   <Jumbotron />
+   <SectionTitle title="Témoignages" />
+
+   <Reviews />
+   <SectionTitle title="Qui sommes nous?" />
+
+   <AboutMe />
   </>
  );
 };

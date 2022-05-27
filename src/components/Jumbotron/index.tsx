@@ -17,7 +17,7 @@ const Jumbotron: React.FC = () => {
       <JumbotronSubtitle />
      </div>
     </div>
-    <div className="flex s:flex-col md:flex-row s:items-center md:text-center">
+    <div className="flex s:flex-col md:flex-row s:items-center md:text-center mb-8">
      <div className="s:mt-14 md:w-2/3 ">
       <JumbotronCatchphrase />
      </div>

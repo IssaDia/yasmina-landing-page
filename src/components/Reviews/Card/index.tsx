@@ -28,7 +28,7 @@ const Review: React.FC<ReviewProps> = ({
       }`}
      />
     </div>
-    <div className="p-6 mb-2 rounded-xl flex flex-col items-center bg-greyCustom drop-shadow-lg cursor-pointer">
+    <div className="p-6 w-[90%] rounded-xl flex flex-col items-center bg-greyCustom drop-shadow-lg cursor-pointer">
      <h5 className="text-gray-900 text-xl font-medium m-2 font-lora">{name}</h5>
      <div className="m-4">{getScore(stars)}</div>
      <p className="text-gray-500 text-sm font-lora">{review}</p>
