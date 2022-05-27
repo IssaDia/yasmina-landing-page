@@ -27,14 +27,9 @@ const Reviews: React.FC = () => {
  });
 
  return (
-  <>
-   <div className="">
-    <div className="text-center">
-     <h2 className="m-20 font-playlist text-6xl">Témoignages</h2>
-    </div>
-    <div className="bg-white">{cards}</div>;
-   </div>
-  </>
+  <section>
+   <div className="bg-white">{cards}</div>
+  </section>
  );
 };
 

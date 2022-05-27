@@ -3,9 +3,7 @@ import React from "react";
 const Layout: React.FC = ({ children }) => {
  return (
   <>
-   <div className="container-fluid flex flex-col font-poppins h-screen">
-    {children}
-   </div>
+   <div className="font-poppins h-screen m-0">{children}</div>
   </>
  );
 };
