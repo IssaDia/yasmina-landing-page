@@ -1,25 +1,13 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("openCalendlyModal", () => {
+ cy.get('[data-test="showCalendlyModal"').click();
+ cy.get('[data-test="calendlyModal"').should("exist");
+});
+
+Cypress.Commands.add("openNavBurger", () => {
+ cy.get('[data-test="navbarBurger"').click();
+});
+
+Cypress.Commands.add("closeCalendlyModal", () => {
+ cy.get('[data-test="closeModal"').click();
+ cy.get('[data-test="calendlyModal"').should("not.exist");
+});

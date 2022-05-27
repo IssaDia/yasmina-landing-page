@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.b719c7d8.css",
-    "main.js": "/static/js/main.46c8fbd0.js",
+    "main.css": "/static/css/main.64b6addd.css",
+    "main.js": "/static/js/main.2ee391e7.js",
+    "static/media/profil-pic-yasmina.png": "/static/media/profil-pic-yasmina.e5ad1cfa083398af01d5.png",
+    "static/media/bandeau-site.svg": "/static/media/bandeau-site.0061ceefbfdfca6c14a5.svg",
+    "static/media/Lora.woff": "/static/media/Lora.27be5464f28fc96e806a.woff",
+    "static/media/Playlist-Script.woff": "/static/media/Playlist-Script.6ef488ea28f2704c3855.woff",
+    "static/media/Lora.woff2": "/static/media/Lora.12507491c6d0e81411d0.woff2",
+    "static/media/logo-yasmina.png": "/static/media/logo-yasmina.b879e5ff7afc066e614f.png",
+    "static/media/Playlist-Script.woff2": "/static/media/Playlist-Script.cf83248dc75d9696ba87.woff2",
     "index.html": "/index.html",
-    "main.b719c7d8.css.map": "/static/css/main.b719c7d8.css.map",
-    "main.46c8fbd0.js.map": "/static/js/main.46c8fbd0.js.map"
+    "main.64b6addd.css.map": "/static/css/main.64b6addd.css.map",
+    "main.2ee391e7.js.map": "/static/js/main.2ee391e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.b719c7d8.css",
-    "static/js/main.46c8fbd0.js"
+    "static/css/main.64b6addd.css",
+    "static/js/main.2ee391e7.js"
   ]
 }
