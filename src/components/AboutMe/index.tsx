@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
     <AboutMePic />
     <div className="w-[550px] max-w-full py-4">
      <AboutMeText />
-     <div className="border-2 text-black no-underline px-3 py-8 flex justify-center space-x-2">
+     <div className="border-2 text-black no-underline px-3 py-8 m-4 flex justify-center space-x-2">
       <p>rejoignez moi : </p>
       <div className="-m-2">
        <FontAwesomeIcon icon={faInstagram} size="2x" />
