@@ -3,7 +3,7 @@ import { CalendlyModal } from "./components/Calendly";
 import Jumbotron from "./components/Jumbotron";
 import Reviews from "./components/Reviews/Container";
 import Navbar from "./components/Navbar";
-import AboutMe from "./components/AboutMe.tsx";
+import AboutMe from "./components/AboutMe";
 import SectionTitle from "./components/atoms/SectionTitle";
 import Layout from "./components/Layout";
 
