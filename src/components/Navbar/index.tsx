@@ -4,13 +4,9 @@ import { useHandleNavbarScrollingOnStart } from "../../hooks/useHandleNavbarScro
 import { Logo } from "./Logo";
 import { Nav } from "./Nav";
 import { Button } from "issa-react-component-library";
-import { cn } from "../../tailwindUtils";
+import { handleButtonCalendly } from "../../lib/interfaces/index";
 
-interface CalendlyHandleModalProps {
- handleShow: () => void;
-}
-
-const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
+const Navbar: React.FC<handleButtonCalendly> = (props: {
  handleShow: () => void;
 }) => {
  const navIsScrolling = useHandleNavbarScrollingOnStart();
@@ -21,14 +17,16 @@ const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
   setNavIsOpened((prev) => !prev);
  };
 
- console.log(cn(`text-sm flex`));
+ console.log(navIsOpened);
 
  return (
   <>
    <nav
-    className={`z-10 h-30 flex-shrink-0 ${
-     navIsScrolling && "transition duration-500 ease-in-out bg-white"
-    } transition duration-500 ease-in-out flex items-center flex-wrap w-full fixed`}
+    className={`z-10 h-30 flex-shrink-0 s:bg-white fixed w-full flex-wrap flex items-center ${
+     navIsScrolling
+      ? "transition duration-500 ease-in-out bg-white"
+      : "lg:bg-transparent"
+    }`}
    >
     <Logo />
     <NavbarBurger handleNavbar={handleNavbar} />
@@ -37,8 +35,8 @@ const Navbar: React.FC<CalendlyHandleModalProps> = (props: {
       !navIsOpened && "hidden"
      }`}
     >
-     <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center justify-center items-center m-8 flex flex-col lg:h-auto">
-      <Nav />
+     <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center justify-center items-center s:mb-4 flex flex-col lg:h-auto">
+      <Nav isOpen={navIsOpened} />
       <Button
        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl"
        onClick={() => props.handleShow()}
