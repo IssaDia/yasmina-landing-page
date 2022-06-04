@@ -8,6 +8,7 @@ import SectionTitle from "./components/atoms/SectionTitle";
 import Layout from "./components/Layout";
 import PersonalSupport from "./components/personalSupport";
 import Mo2i from "./components/MO2i";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
  const [calendlyModalIsActive, setCalendlyModalIsActive] =
@@ -42,6 +43,9 @@ const App: React.FC = () => {
     <div id="reviews">
      <SectionTitle title="Témoignages" />
      <Reviews />
+    </div>
+    <div>
+     <Footer></Footer>
     </div>
    </Layout>
   </>
