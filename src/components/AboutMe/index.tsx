@@ -12,18 +12,18 @@ const AboutMe: React.FC = () => {
     <div className="lg:w-1/2 s:w-full">
      <AboutMePic />
     </div>
-    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6">
+    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6 xl:space-y-24 pb-4">
      <div className="px-4">
       <AboutMeText />
      </div>
-     <div className="border-2 text-black no-underline flex flex-row lg:p-8 s:p-4 s:w-3/4 pb-4 lg:w-1/2 mx-auto space-x-2">
+     <div className="border-2 text-black no-underline flex flex-row md:w-1/3 s:w-3/4 s:text-sm xl:text-3xl p-4 space-x-4 mx-auto">
       <p>rejoignez moi : </p>
-      <div className="-my-2">
+      <a href="https://www.instagram.com/yasmina_corman/" className="-my-2">
        <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </div>
-      <div className="-my-2">
+      </a>
+      <a href="https://www.facebook.com/iiasmina.laouami" className="-my-2">
        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      </div>
+      </a>
      </div>
     </div>
    </div>
