@@ -7,19 +7,23 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const AboutMe: React.FC = () => {
  return (
-  <section className="w-full bg-salmon">
-   <div className="w-[1280px] max-w-[95%] my-auto mx-0 flex space-x-8 space-y-8">
-    <AboutMePic />
-    <div className="w-[550px] max-w-full py-4">
-     <AboutMeText />
-     <div className="border-2 text-black no-underline px-3 py-8 m-4 flex justify-center space-x-2">
+  <section className="">
+   <div className="lg:flex lg:flex-row">
+    <div className="lg:w-1/2 s:w-full">
+     <AboutMePic />
+    </div>
+    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6 xl:space-y-24 pb-4">
+     <div className="px-4">
+      <AboutMeText />
+     </div>
+     <div className="border-2 text-black no-underline flex flex-row md:w-1/3 s:w-3/4 s:text-sm xl:text-3xl p-4 space-x-4 mx-auto">
       <p>rejoignez moi : </p>
-      <div className="-m-2">
+      <a href="https://www.instagram.com/yasmina_corman/" className="-my-2">
        <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </div>
-      <div className="-m-2">
+      </a>
+      <a href="https://www.facebook.com/iiasmina.laouami" className="-my-2">
        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      </div>
+      </a>
      </div>
     </div>
    </div>

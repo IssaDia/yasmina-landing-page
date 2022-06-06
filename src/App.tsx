@@ -8,6 +8,7 @@ import SectionTitle from "./components/atoms/SectionTitle";
 import Layout from "./components/Layout";
 import PersonalSupport from "./components/personalSupport";
 import Mo2i from "./components/MO2i";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
  const [calendlyModalIsActive, setCalendlyModalIsActive] =
@@ -29,20 +30,23 @@ const App: React.FC = () => {
     <Jumbotron />
     <div id="aboutme">
      <SectionTitle title="Qui sommes nous?" />
+     <AboutMe />
     </div>
-    <AboutMe />
     <div id="personalSupport">
      <SectionTitle title="Mes accompagnments Personnalisés" />
+     <PersonalSupport />
     </div>
-    <PersonalSupport />
     <div id="mo2i">
      <SectionTitle title="MO2i" />
+     <Mo2i handleShow={handleCalendlyModal} />
     </div>
-    <Mo2i />
     <div id="reviews">
      <SectionTitle title="Témoignages" />
+     <Reviews />
     </div>
-    <Reviews />
+    <div>
+     <Footer></Footer>
+    </div>
    </Layout>
   </>
  );

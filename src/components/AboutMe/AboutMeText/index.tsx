@@ -3,10 +3,10 @@ import React from "react";
 const AboutMeText: React.FC = () => {
  return (
   <>
-   <h4 className="text-2xl tracking-widest capitalize mb-6 text-white">
+   <h4 className="lg:text-2xl s:text-lg xl:text-5xl tracking-widest capitalize py-8 text-white">
     La fondatrice de réussir & briller
    </h4>
-   <p className="text-lg tracking-wider mb-12">
+   <p className="lg:text-lg s:text-base xl:text-5xl  tracking-wider">
     Je suis Yasmina Corman, j&apos;aide les personnes perdues dans leur projet à
     reprendre confiance, à passer à l&apos;action et à réussir en mettant
     l&apos;accent sur leur singularité. (Consultante Formatrice depuis plus de
