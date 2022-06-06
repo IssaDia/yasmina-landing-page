@@ -12,13 +12,13 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
 }) => {
  return (
   <>
-   <div className="text-center italic my-4 text-sm">
+   <div className="text-center italic my-16 text-sm xl:text-4xl">
     <p>Connaissance de soi, Trouver votre excellence d&apos;action</p>
    </div>
    <div>
-    <img src={mo2ipic1} />
+    <img src={mo2ipic1} className="w-full lg:h-screen" />
    </div>
-   <div className="italic text-sm text-center my-4">
+   <div className="italic text-sm text-center my-16 xl:text-4xl">
     <p>
      Identifier votre Excellence d’action ou Mode Opératoire Identitaire et
      Itératif (Mo2i)
@@ -28,7 +28,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
     <div className="lg:w-1/2">
      <img src={mo2ipic2} className="w-full lg:h-screen" />
     </div>
-    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl">
+    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm xl:text-4xl xl:space-y-20 lg:text:6xl">
      <p className="">
       Un modèle et une méthode découverts par Joël Guillon pour vous permettre
       d’identifier et de vous approprier votre Excellence d’Action, celle qui
@@ -58,7 +58,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      <div className="lg:w-1/2">
       <img src={mo2ipic3} className="w-full lg:h-screen" alt="" />
      </div>
-     <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl">
+     <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-20">
       <div>
        <p>Les Bénéfices</p>
       </div>
@@ -87,7 +87,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       </div>
       <div className="mx-auto">
        <Button
-        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl"
+        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
         onClick={() => props.handleShow()}
         data-test="showCalendlyModal"
        >
@@ -101,7 +101,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
     <div className="lg:w-1/2">
      <img src={mo2ipic4} className="w-full lg:h-screen" />
     </div>
-    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl">
+    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-20">
      <div>
       <p className="underline">POUR QUI ? Pour tous à partir de 16ans :</p>
      </div>
@@ -138,13 +138,13 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      </div>
     </div>
    </div>
-   <div className="p-6">
+   <div className="p-6 xl:text-4xl xl:space-y-20">
     <div className="my-4">
      <p className="underline">Selon votre profil :</p>
     </div>
     <div className="space-y-8">
      <div>
-      <p>Entreprises</p>
+      <p className="underline">Entreprises</p>
       <p>
        Engager une dynamique de reconnaissance et de mobilisation de
        l’excellence d’Action a des bénéfices spectaculaires sur la performance
@@ -155,7 +155,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       </p>
      </div>
      <div>
-      <p>Particuliers et salariés</p>
+      <p className="underline">Particuliers et salariés</p>
       <p>
        Une démarche puissante et indispensable pour continuer à orienter votre
        carrière, trouver un emploi ou une activité valorisant vos talents,
@@ -180,35 +180,6 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      </div>
     </div>
    </div>
-
-   {/* <p className="underline">Selon votre profil :</p>
-    <p>Entreprises</p> */}
-   {/* <p>
-     Engager une dynamique de reconnaissance et de mobilisation de l’excellence
-     d’Action a des bénéfices spectaculaires sur la performance individuelle et
-     collective. Votre organisation peut commencer par identifier le Mo2i de ses
-     dirigeants, de ses managers et talents clés. Puis elle peut adresser les
-     équipes en fonction des enjeux stratégiques du moment.
-    </p>
-    <p>Particuliers et salariés</p>
-    <p>
-     Une démarche puissante et indispensable pour continuer à orienter votre
-     carrière, trouver un emploi ou une activité valorisant vos talents, occuper
-     enfin votre juste place et y être reconnu pour votre Excellence d’Action.
-     Retraités ou futurs retraités Une démarche pour donner un super élan
-     créatif à votre nouvelle vie, lui donner du sens et œuvrer à contribuer au
-     monde et à la société en cultivant plus que jamais votre plaisir d’agir !
-    </p>
-    <p>Indépendants ou futurs indépendants</p>
-    <p>
-     Cette démarche vous permet de construire une offre puissante et séduisante
-     qui vous différencie clairement de celles des autres. Votre propre
-     mécanisme d’excellence d’action identifié et reconnu, la suite logique est
-     de le transformer en une offre de service qui « accroche » vos clients «
-     naturels », c’est-à-dire ceux qui souffrent de ne pas vous avoir rencontré
-     et donc de ne pas avoir encore profité de ce que votre Mo2i peut changer
-    </p> */}
-   {/* <button className="border-2">Télécharger la plaquette</button> */}
   </>
  );
 };

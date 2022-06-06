@@ -8,7 +8,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
  title,
 }: SectionTitleProps) => {
  return (
-  <h3 className="font-playlist lg:text-5xl capitalize m-12 text-center s:text-3xl">
+  <h3 className="font-playlist lg:text-5xl capitalize m-12 text-center s:text-3xl xl:text-6xl">
    {title}
   </h3>
  );

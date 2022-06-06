@@ -18,9 +18,9 @@ const Review: React.FC<ReviewProps> = ({
  return (
   <>
    <div className="w-full m-5 flex flex-col justify-items-center items-center">
-    <div className="w-32 m-4">
+    <div className=" h-32 w-32 xl:h-96 xl:w-96 m-4">
      <img
-      className="rounded-full h-32 w-32 cursor-pointer drop-shadow-lg"
+      className="rounded-full h-32 w-32 xl:h-96 xl:w-96 cursor-pointer drop-shadow-lg"
       src={`${
        imageSrc
         ? imageSrc
@@ -29,9 +29,11 @@ const Review: React.FC<ReviewProps> = ({
      />
     </div>
     <div className="p-6 w-[90%] rounded-xl flex flex-col items-center bg-greyCustom drop-shadow-lg cursor-pointer">
-     <h5 className="text-gray-900 text-xl font-medium m-2 font-lora">{name}</h5>
+     <h5 className="text-gray-900 text-xl font-medium m-2 font-lora xl:text-4xl">
+      {name}
+     </h5>
      <div className="m-4">{getScore(stars)}</div>
-     <p className="text-gray-500 text-sm font-lora">{review}</p>
+     <p className="text-gray-500 text-sm font-lora xl:text-4xl">{review}</p>
     </div>
    </div>
   </>
