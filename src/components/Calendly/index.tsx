@@ -21,7 +21,7 @@ export const CalendlyModal: React.FC<CalendlyModalProps> = (props: {
    ></div>
    <div className="w-full h-full flex items-center absolute justify-center">
     <div
-     className={`${showModal} z-20 fixed sm:w-1/2 h-screen flex flex-col shadow-xl bg-white`}
+     className={`${showModal} z-20 fixed w-5/6 mx-auto h-[600px] flex flex-col shadow-xl bg-white`}
      data-test="calendlyModal"
     >
      <CalendlyModalCloseButton handleCloseModal={() => props.handleShow()} />
