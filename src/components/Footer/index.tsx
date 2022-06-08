@@ -4,9 +4,9 @@ const Footer: React.FC = () => {
  return (
   <>
    <footer className="w-full h-48 bg-salmon">
-    <div className="text-white flex flex-col items-center py-12 xl:text-3xl font-playlist">
+    <div className="text-white flex flex-col items-center py-12 xl:text-3xl">
      <div>
-      <p>Réussir et briller en toute confiance</p>
+      <p className="font-playlist">Réussir et briller en toute confiance</p>
      </div>
      <ul className="flex flex-row space-x-4">
       <li className="underline">
