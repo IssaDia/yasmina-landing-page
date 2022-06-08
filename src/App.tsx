@@ -44,6 +44,7 @@ const App: React.FC = () => {
      <SectionTitle title="Témoignages" />
      <Reviews />
     </div>
+
     <div>
      <Footer></Footer>
     </div>
