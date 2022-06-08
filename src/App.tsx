@@ -28,23 +28,28 @@ const App: React.FC = () => {
      />
     )}
     <Jumbotron />
-    <div id="aboutme">
+    <div id="aboutme" className="pt-16">
      <SectionTitle title="Qui sommes nous?" />
      <AboutMe handleShow={handleCalendlyModal} />
     </div>
-    <div id="personalSupport">
+
+    <div id="personalSupport" className="pt-16">
+     {" "}
      <SectionTitle title="Mes accompagnments Personnalisés" />
      <PersonalSupport />
     </div>
-    <div id="mo2i">
+
+    <div id="mo2i" className="pt-16">
+     {" "}
      <SectionTitle title="MO2i" />
      <Mo2i handleShow={handleCalendlyModal} />
     </div>
-    <div id="reviews">
+
+    <div id="reviews" className="pt-16">
+     {" "}
      <SectionTitle title="Témoignages" />
      <Reviews />
     </div>
-
     <div>
      <Footer></Footer>
     </div>

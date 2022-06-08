@@ -22,7 +22,7 @@ const Navbar: React.FC<handleButtonCalendly> = (props: {
  return (
   <>
    <nav
-    className={`z-10 h-30 flex-shrink-0 s:bg-white fixed w-full flex-wrap flex items-center ${
+    className={`z-10 h-15 flex-shrink-0 s:bg-white fixed w-full flex-wrap flex items-center ${
      navIsScrolling
       ? "transition duration-500 ease-in-out bg-white"
       : "lg:bg-transparent"
