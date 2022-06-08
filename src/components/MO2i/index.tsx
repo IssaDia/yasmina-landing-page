@@ -15,14 +15,14 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
     <p>Connaissance de soi, Trouver votre excellence d&apos;action</p>
    </div>
    <div>{/* <img src={mo2ipic1} className="w-full lg:h-screen" /> */}</div>
-   <div className="italic text-sm text-center my-16 xl:text-4xl">
+   <div className="italic text-sm text-center xl:text-4xl my-8">
     <p>
      Identifier votre Excellence d’action ou Mode Opératoire Identitaire et
      Itératif (Mo2i)
     </p>
    </div>
-   <div className="flex lg:flex-row-reverse s:flex-col lg:h-screen">
-    <div className="w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm xl:text-4xl xl:space-y-20 lg:text:6xl">
+   <div className="flex s:flex-col">
+    <div className="w-full space-y-8 s:p-4 s:text-sm xl:text-4xl xl:space-y-20 lg:text:6xl">
      <p className="">
       Un modèle et une méthode découverts par Joël Guillon pour vous permettre
       d’identifier et de vous approprier votre Excellence d’Action, celle qui
@@ -52,7 +52,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      <div className="lg:w-1/2">
       <img src={mo2ipic3} className="w-full lg:h-screen" alt="" />
      </div>
-     <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-20">
+     <div className="lg:w-1/2 s:w-full flex flex-col space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-20">
       <div>
        <p>Les Bénéfices</p>
       </div>
