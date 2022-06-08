@@ -15,6 +15,9 @@ const Footer: React.FC = () => {
       <li className="underline">
        <a href="https://www.facebook.com/iiasmina.laouami">Facebook</a>
       </li>
+      <li className="underline">
+       <a href="https://g.co/kgs/GHFnMk">Google</a>
+      </li>
      </ul>
     </div>
    </footer>

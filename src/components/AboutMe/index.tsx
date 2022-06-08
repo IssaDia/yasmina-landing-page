@@ -5,7 +5,12 @@ import AboutMeText from "./AboutMeText";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const AboutMe: React.FC = () => {
+import { Button } from "issa-react-component-library";
+import { handleButtonCalendly } from "../../lib/interfaces";
+
+const AboutMe: React.FC<handleButtonCalendly> = (props: {
+ handleShow: () => void;
+}) => {
  return (
   <section className="">
    <div className="lg:flex lg:flex-row">
@@ -24,6 +29,17 @@ const AboutMe: React.FC = () => {
       <a href="https://www.facebook.com/iiasmina.laouami" className="-my-2">
        <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
+     </div>
+     <div className="flex lg:flex-row s:flex-col">
+      <div className="mx-auto">
+       <Button
+        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+        onClick={() => props.handleShow()}
+        data-test="showCalendlyModal"
+       >
+        Réserver un entretien gratuit
+       </Button>
+      </div>
      </div>
     </div>
    </div>

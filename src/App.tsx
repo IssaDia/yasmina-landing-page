@@ -30,7 +30,7 @@ const App: React.FC = () => {
     <Jumbotron />
     <div id="aboutme">
      <SectionTitle title="Qui sommes nous?" />
-     <AboutMe />
+     <AboutMe handleShow={handleCalendlyModal} />
     </div>
     <div id="personalSupport">
      <SectionTitle title="Mes accompagnments Personnalisés" />

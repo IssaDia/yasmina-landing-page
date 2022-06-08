@@ -16,7 +16,7 @@ const PersonalSupportText: React.FC = () => {
     <FontAwesomeIcon icon={faAngleDoubleRight} size="1x" /> &nbsp; Crée Le ton
     propre moule !<br /> Ras le bol de ne pas exprimer qui tu es et ce que tu as
     en toi ? &nbsp;
-    <FontAwesomeIcon icon={faAngleDoubleRight} size="1x" /> &nbsp; Assure et
+    <FontAwesomeIcon icon={faAngleDoubleRight} size="1x" /> &nbsp; Assume et
     exprime le !<br /> Ras le bol de se soumettre au code ?&nbsp;
     <FontAwesomeIcon icon={faAngleDoubleRight} size="1x" />
     &nbsp; Positionne tes codes !<br /> Ras le bol de cette souffrance de
