@@ -6,7 +6,7 @@ const Image: React.FC = () => {
   <img
    className=""
    role="jumbotronImage"
-   alt="Yasmina Corman picture"
+   alt="photo de Yasmina Corman"
    src={yasminaJumbotronImage}
   />
  );

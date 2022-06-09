@@ -21,6 +21,7 @@ const Review: React.FC<ReviewProps> = ({
     <div className=" h-32 w-32 xl:h-96 xl:w-96 m-4">
      <img
       className="rounded-full h-32 w-32 xl:h-96 xl:w-96 cursor-pointer drop-shadow-lg"
+      alt="photo du site de Yasmina Corman"
       src={`${
        imageSrc
         ? imageSrc

@@ -36,7 +36,7 @@ const App: React.FC = () => {
     <div id="personalSupport" className="pt-16">
      {" "}
      <SectionTitle title="Mes accompagnments Personnalisés" />
-     <PersonalSupport />
+     <PersonalSupport handleShow={handleCalendlyModal} />
     </div>
 
     <div id="mo2i" className="pt-16">

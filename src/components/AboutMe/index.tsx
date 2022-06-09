@@ -14,10 +14,10 @@ const AboutMe: React.FC<handleButtonCalendly> = (props: {
  return (
   <section className="">
    <div className="lg:flex lg:flex-row">
-    <div className="lg:w-1/2 s:w-full">
+    <div className="lg:w-1/2 s:w-full h-[1000px] s:h-full">
      <AboutMePic />
     </div>
-    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6 xl:space-y-24 pb-4">
+    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6 xl:space-y-24 pb-4 h-[1000px] s:h-full">
      <div className="px-4">
       <AboutMeText />
      </div>
@@ -37,7 +37,7 @@ const AboutMe: React.FC<handleButtonCalendly> = (props: {
         onClick={() => props.handleShow()}
         data-test="showCalendlyModal"
        >
-        Réserver un entretien gratuit
+        Booker mon entretien gratuit
        </Button>
       </div>
      </div>

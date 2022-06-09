@@ -7,7 +7,7 @@ const AboutMePic: React.FC = () => {
    <img
     src={aboutMePic}
     alt="photo de Yasmina Corman"
-    className="s:w-full max-w-full max-h-full object-fill"
+    className="s:w-full h-[1000px] object-fill"
    />
   </div>
  );

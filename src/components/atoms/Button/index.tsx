@@ -7,8 +7,6 @@ export interface Props {
  onClick?: () => void;
 }
 const Button = ({ children, ...props }: Props) => {
- console.log(props);
-
  return <button {...props}>{children}</button>;
 };
 

@@ -17,8 +17,6 @@ const Navbar: React.FC<handleButtonCalendly> = (props: {
   setNavIsOpened((prev) => !prev);
  };
 
- console.log(navIsOpened);
-
  return (
   <>
    <nav

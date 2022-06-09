@@ -1,5 +1,5 @@
 import React from "react";
-// import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
+import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
 import mo2ipic3 from "../../assets/images/mo2i_pic3.png";
 import mo2ipic4 from "../../assets/images/mo2i_pic4.jpeg";
 
@@ -14,7 +14,13 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
    <div className="text-center italic my-16 text-sm xl:text-4xl">
     <p>Connaissance de soi, Trouver votre excellence d&apos;action</p>
    </div>
-   <div>{/* <img src={mo2ipic1} className="w-full lg:h-screen" /> */}</div>
+   <div>
+    <img
+     src={mo2ipic1}
+     className="w-full lg:h-screen"
+     alt="photo du site de Yasmina Corman"
+    />
+   </div>
    <div className="italic text-sm text-center xl:text-4xl my-8">
     <p>
      Identifier votre Excellence d’action ou Mode Opératoire Identitaire et
@@ -22,7 +28,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
     </p>
    </div>
    <div className="flex s:flex-col">
-    <div className="w-full space-y-8 s:p-4 s:text-sm xl:text-4xl xl:space-y-20 lg:text:6xl">
+    <div className="w-full space-y-8 s:p-4 s:text-sm xl:text-4xl xl:space-y-8 lg:text:6xl">
      <p className="">
       Un modèle et une méthode découverts par Joël Guillon pour vous permettre
       d’identifier et de vous approprier votre Excellence d’Action, celle qui
@@ -30,7 +36,9 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       certaines situations dans La fluidité, lélégence, l&apos;efficacité, la
       facilité et le plaisir !
      </p>
-     <p>Vos Besoins</p>
+     <p className="underline">
+      <strong>Vos Besoins</strong>
+     </p>
      <ul>
       <li>– Trouver du sens et œuvrer dans le plaisir</li>
       <li>– Définir votre singularité dans l’action</li>
@@ -50,11 +58,17 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
    <div>
     <div className="flex lg:flex-row s:flex-col lg:h-screen">
      <div className="lg:w-1/2">
-      <img src={mo2ipic3} className="w-full lg:h-screen" alt="" />
+      <img
+       src={mo2ipic3}
+       className="w-full lg:h-screen"
+       alt="photo du site de Yasmina Corman"
+      />
      </div>
-     <div className="lg:w-1/2 s:w-full flex flex-col space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-20">
+     <div className="lg:w-1/2 s:w-full flex flex-col space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
       <div>
-       <p>Les Bénéfices</p>
+       <p className="underline">
+        <strong>Les Bénéfices</strong>
+       </p>
       </div>
       <div>
        <p>
@@ -79,23 +93,29 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
         <li>– Faire la différence</li>
        </ul>
       </div>
-      <div className="mx-auto">
-       <Button
-        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
-        onClick={() => props.handleShow()}
-        data-test="showCalendlyModal"
-       >
-        Réserver un entretien gratuit
-       </Button>
+      <div className="flex lg:flex-row s:flex-col">
+       <div className="mx-auto">
+        <Button
+         className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+         onClick={() => props.handleShow()}
+         data-test="showCalendlyModal"
+        >
+         Booker mon entretien gratuit
+        </Button>
+       </div>
       </div>
      </div>
     </div>
    </div>
    <div className="flex lg:flex-row-reverse s:flex-col lg:h-screen">
     <div className="lg:w-1/2">
-     <img src={mo2ipic4} className="w-full lg:h-screen" />
+     <img
+      src={mo2ipic4}
+      className="w-full lg:h-screen"
+      alt="photo du site de Yasmina Corman"
+     />
     </div>
-    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-20">
+    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
      <div>
       <p className="underline">POUR QUI ? Pour tous à partir de 16ans :</p>
      </div>
@@ -132,9 +152,11 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      </div>
     </div>
    </div>
-   <div className="p-6 xl:text-4xl xl:space-y-20">
+   <div className="p-6 xl:text-4xl xl:space-y-8">
     <div className="my-4">
-     <p className="underline">Selon votre profil :</p>
+     <p className="underline">
+      <strong>Selon votre profil :</strong>
+     </p>
     </div>
     <div className="space-y-8">
      <div>
@@ -161,7 +183,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       </p>
      </div>
      <div>
-      <p>Indépendants ou futurs indépendants</p>
+      <p className="underline">Indépendants ou futurs indépendants</p>
       <p>
        Cette démarche vous permet de construire une offre puissante et
        séduisante qui vous différencie clairement de celles des autres. Votre
@@ -171,6 +193,17 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
        avoir rencontré et donc de ne pas avoir encore profité de ce que votre
        Mo2i peut changer
       </p>
+     </div>
+     <div className="flex lg:flex-row s:flex-col">
+      <div className="mx-auto">
+       <Button
+        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+        onClick={() => props.handleShow()}
+        data-test="showCalendlyModal"
+       >
+        Booker mon entretien gratuit
+       </Button>
+      </div>
      </div>
     </div>
    </div>

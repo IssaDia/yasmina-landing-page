@@ -59,14 +59,15 @@ const PersonalSupportText: React.FC = () => {
    </ul>
    <br />
    <p>
-    Découvrir ton excellence d&apos;action te permettra d&apos;exprimer ton
-    plein potentiel et de te réaliser pleinement, dans le plaisir, la sérénité
-    financière et dans ta créativité.
+    <strong>Découvrir ton excellence d&apos;action</strong> te permettra
+    d&apos;exprimer ton plein potentiel et de te réaliser pleinement, dans le
+    plaisir, la sérénité financière et dans ta créativité.
    </p>
    <br />
    <p>
-    Dans un monde où chacun excelle de manière unique, il n&apos;y a plus de
-    rivalité, chacun est à sa place et chacun reconnait cette place !
+    <strong>Dans un monde où chacun excelle de manière unique</strong>, il
+    n&apos;y a plus de rivalité, chacun est à sa place et chacun reconnait cette
+    place !
    </p>
    <p>
     Réussir là où vous faites la difference,
