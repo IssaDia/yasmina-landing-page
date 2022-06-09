@@ -5,8 +5,9 @@ interface NavProps {
 }
 
 export const Nav: React.FC<NavProps> = ({ isOpen }) => {
- console.log(isOpen);
-
+ const handleClick = () => {
+  console.log("test");
+ };
  return (
   <ul className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center flex flex-col items-center justify-center">
    <div
@@ -25,6 +26,7 @@ export const Nav: React.FC<NavProps> = ({ isOpen }) => {
      <a
       className="text-md uppercase hover:text-orange text-black"
       href="#aboutme"
+      onClick={() => handleClick}
      >
       Qui sommes nous?
      </a>
