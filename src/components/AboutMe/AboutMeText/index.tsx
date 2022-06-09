@@ -6,7 +6,7 @@ const AboutMeText: React.FC = () => {
    <h4 className="lg:text-2xl s:text-lg xl:text-5xl tracking-widest capitalize py-8 text-white">
     La fondatrice de réussir & briller
    </h4>
-   <p className="   ">
+   <p className="s:text-sm lg:text:6xl xl:text-4xl">
     Je suis <strong>Yasmina Corman</strong>, j&apos;aide les personnes{" "}
     <strong>perdues</strong>
     dans leur <strong>projet</strong> à{" "}

@@ -5,7 +5,7 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 
 const PersonalSupportText: React.FC = () => {
  return (
-  <div className="p-6">
+  <div className="p-6 s:text-sm lg:text:6xl xl:text-4xl">
    <p>
     Tu te sens comme amputé de qui tu es que ce soit dans ta vie professionnelle
     et/ou personnelle ?

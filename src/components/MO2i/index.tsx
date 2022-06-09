@@ -152,7 +152,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      </div>
     </div>
    </div>
-   <div className="p-6 xl:text-4xl xl:space-y-8">
+   <div className="p-6 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
     <div className="my-4">
      <p className="underline">
       <strong>Selon votre profil :</strong>
