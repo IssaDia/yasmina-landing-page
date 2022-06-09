@@ -14,10 +14,10 @@ const AboutMe: React.FC<handleButtonCalendly> = (props: {
  return (
   <section className="">
    <div className="lg:flex lg:flex-row">
-    <div className="lg:w-1/2 s:w-full h-[1000px] s:h-full">
+    <div className="lg:w-1/2 s:w-full xl:h-[1800px] lg:h-[900px] s:h-full">
      <AboutMePic />
     </div>
-    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6 xl:space-y-24 pb-4 h-[1000px] s:h-full">
+    <div className="lg:w-1/2 s:w-full bg-salmon space-y-6 xl:space-y-24 pb-4 xl:h-[1800px] lg:h-[900px] s:h-full">
      <div className="px-4">
       <AboutMeText />
      </div>
@@ -33,7 +33,7 @@ const AboutMe: React.FC<handleButtonCalendly> = (props: {
      <div className="flex lg:flex-row s:flex-col">
       <div className="mx-auto">
        <Button
-        className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+        className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
         onClick={() => props.handleShow()}
         data-test="showCalendlyModal"
        >

@@ -36,7 +36,7 @@ const Navbar: React.FC<handleButtonCalendly> = (props: {
      <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center justify-center items-center s:mb-4 flex flex-col lg:h-auto">
       <Nav isOpen={navIsOpened} />
       <Button
-       className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl"
+       className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl"
        onClick={() => props.handleShow()}
        data-test="showCalendlyModal"
       >
