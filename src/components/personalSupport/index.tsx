@@ -20,7 +20,7 @@ const PersonalSupport: React.FC<handleButtonCalendly> = (props: {
    <div className="flex lg:flex-row s:flex-col">
     <div className="mx-auto">
      <Button
-      className="text-sm p-2 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+      className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
       onClick={() => props.handleShow()}
       data-test="showCalendlyModal"
      >

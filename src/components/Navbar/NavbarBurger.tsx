@@ -8,7 +8,7 @@ export const NavbarBurger: React.FC<NavbarBurgerProps> = (props: {
 }) => {
  return (
   <button
-   className=" inline-flex p-3 rounded lg:hidden text-black ml-auto hover:text-black outline-none"
+   className=" inline-flex p-4 rounded lg:hidden text-black ml-auto hover:text-black outline-none"
    data-test="navbarBurger"
    onClick={() => props.handleNavbar()}
   >
