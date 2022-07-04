@@ -8,13 +8,13 @@ const AboutMeText: React.FC = () => {
    </h4>
    <p className="s:text-sm lg:text:6xl xl:text-4xl">
     Je suis <strong>Yasmina Corman</strong>, j&apos;aide les personnes{" "}
-    <strong>perdues</strong>
-    dans leur <strong>projet</strong> à{" "}
+    <strong>perdues</strong> dans leur <strong>projet</strong> à{" "}
     <strong>
      reprendre confiance, à passer à l&apos;action et à réussir en mettant
-     l&apos;accent sur leur singularité.
+     l&apos;accent sur leur singularité
     </strong>{" "}
-    (Consultante Formatrice depuis plus de 10 ans et praticienne Mo2i)
+    (Consultante Formatrice depuis plus de 10 ans et praticienne Mo2i entourée
+    d&apos;une équipe d&apos;experts de guides tisserants indépendants).
     <br />
     <br />
     <strong>Amputée</strong> de l&apos;expression de ma{" "}
@@ -28,10 +28,10 @@ const AboutMeText: React.FC = () => {
     <br />
     <br />
     J&apos;ai pris <strong>conscience</strong> de{" "}
-    <strong>mon parcours de vi</strong>e, de mes <strong>expériences</strong>,
+    <strong>mon parcours de vie</strong>, de mes <strong>expériences</strong>,
     de mon excellence d’action,{" "}
-    <strong>de mes compétences quelles qu&apos;elles soient.</strong>
-    Et ainsi réussir et briller comme je l&apos;entends.
+    <strong>de mes compétences quelles qu&apos;elles soient. </strong> Et ainsi
+    réussir et briller comme je l&apos;entends.
     <br />
     <br />
     J&apos;ai découvert ce qu&apos;il y a d&apos;excellent en moi et{" "}
@@ -41,7 +41,7 @@ const AboutMeText: React.FC = () => {
     <br />
     Si cela est également ton objectif, je <strong>t&apos;aide</strong> à
     avancer en <strong>pleine conscience</strong> de ton être, de{" "}
-    <strong>on plein potentiel </strong>tet à{" "}
+    <strong>ton plein potentiel </strong>et à{" "}
     <strong>réussir en toute confiance !</strong>
     <br />
     <br />
@@ -60,10 +60,11 @@ const AboutMeText: React.FC = () => {
     <br />
     <br />
     Dans une relation <strong>bienveillante</strong> et de{" "}
-    <strong>confiance</strong>. J&apos;ai aidé et formé plus de 700 personnes
-    dans la réussite de leur projet (personnel ou professionnel ,chef(fe)
-    d&apos;entreprise, transition ou orientation professionnelle, étudiant,
-    couple, famille ...)
+    <strong>confiance</strong>. J&apos;ai aidé et formé plus de{" "}
+    <strong>700 personnes</strong> dans{" "}
+    <strong>la réussite de leur projet</strong> (personnel ou professionnel
+    ,chef(fe) d&apos;entreprise, transition ou orientation professionnelle,
+    étudiant, couple, famille ...)
     <br />
     <br />
     <strong>Réserves maintenant ton entretien gratuit</strong>

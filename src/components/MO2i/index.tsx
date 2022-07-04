@@ -28,7 +28,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
     </p>
    </div>
    <div className="flex s:flex-col">
-    <div className="w-full space-y-8 s:p-4 s:text-sm xl:text-4xl xl:space-y-8 lg:text:6xl">
+    <div className="w-full space-y-4 s:p-4 s:text-sm xl:text-4xl xl:space-y-8 lg:text:6xl">
      <p className="">
       Un modèle et une méthode découverts par Joël Guillon pour vous permettre
       d’identifier et de vous approprier votre Excellence d’Action, celle qui
@@ -40,18 +40,18 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       <strong>Vos Besoins</strong>
      </p>
      <ul>
-      <li>– Trouver du sens et œuvrer dans le plaisir</li>
-      <li>– Définir votre singularité dans l’action</li>
+      <li>- Trouver du sens et œuvrer dans le plaisir</li>
+      <li>- Définir votre singularité dans l’action</li>
       <li>
-       – Etre repéré et distingué par ceux qui ont le plus besoin de vous
+       - Etre repéré et distingué par ceux qui ont le plus besoin de vous
       </li>
-      <li>– Orientation professionnel</li>
-      <li>– Trouver et comprendre sa place</li>
+      <li>- Orientation professionnel</li>
+      <li>- Trouver et comprendre sa place</li>
       <li>
-       – Mettre des mots sur ce que vous faites d’excellent et sur la manière de
+       - Mettre des mots sur ce que vous faites d’excellent et sur la manière de
        le faire, (ce que les tests habituels ne peuvent pas dire de vous).
       </li>
-      <li>– Qu&apos;apportes tu le plus aux autres ?</li>
+      <li>- Qu&apos;apportes tu le plus aux autres ?</li>
      </ul>
     </div>
    </div>
@@ -64,7 +64,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
        alt="photo du site de Yasmina Corman"
       />
      </div>
-     <div className="lg:w-1/2 s:w-full flex flex-col space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
+     <div className="lg:w-1/2 s:w-full flex flex-col space-y-4 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
       <div>
        <p className="underline">
         <strong>Les Bénéfices</strong>
@@ -81,28 +81,17 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       </div>
       <div>
        <ul>
-        <li>– Quel est ton super pouvoir</li>
-        <li>– Trouver et comprendre sa juste place</li>
-        <li>– Être reconnu</li>
-        <li>– Faire la différence</li>
-        <li>– Mieux communiquer sur comment tu fais</li>
-        <li>– Lancer et/ou développer son actvité</li>
-        <li>– œuvrer dans le plaisir et la sérénité financière</li>
-        <li>– donner un nouvel élan à votre vie</li>
-        <li>– Cohésion d&apos;équipe</li>
-        <li>– Faire la différence</li>
+        <li>- Quel est ton super pouvoir</li>
+        <li>- Trouver et comprendre sa juste place</li>
+        <li>- Être reconnu</li>
+        <li>- Faire la différence</li>
+        <li>- Mieux communiquer sur comment tu fais</li>
+        <li>- Lancer et/ou développer son actvité</li>
+        <li>- œuvrer dans le plaisir et la sérénité financière</li>
+        <li>- donner un nouvel élan à votre vie</li>
+        <li>- Cohésion d&apos;équipe</li>
+        <li>- Faire la différence</li>
        </ul>
-      </div>
-      <div className="flex lg:flex-row s:flex-col">
-       <div className="mx-auto">
-        <Button
-         className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
-         onClick={() => props.handleShow()}
-         data-test="showCalendlyModal"
-        >
-         Booker mon entretien gratuit
-        </Button>
-       </div>
       </div>
      </div>
     </div>
@@ -115,44 +104,44 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
       alt="photo du site de Yasmina Corman"
      />
     </div>
-    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-8 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
+    <div className="lg:w-1/2 s:w-full flex flex-col justify-center space-y-4 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
      <div>
-      <p className="underline">POUR QUI ? Pour tous à partir de 16ans :</p>
+      <p className="underline font-bold">le mo2i pour tous:</p>
      </div>
      <div>
       <ul>
-       <li>Entreprises</li>
-       <li>Salariés Particulier</li>
-       <li>Indépendant et futur indépendant</li>
-       <li>Retraité futur retraité</li>
-       <li>En recherche d&apos;emploi</li>
+       <li>- Entreprises</li>
+       <li>- Salariés Particulier</li>
+       <li>- Indépendant et futur indépendant</li>
+       <li>- Retraité futur retraité</li>
+       <li>- En recherche d&apos;emploi</li>
       </ul>
      </div>
 
      <div className="space-y-4">
-      <p className="bolder underline">Les formats possibles</p>
+      <p className="underline font-bold">Les formats possibles</p>
       <p>Plusieurs modalités existent selon vos besoins :</p>
       <ul>
        <li>
-        – Atelier collectif de 2 jours consécutifs pour découvrir son Mode
+        - Atelier collectif de 2 jours consécutifs pour découvrir son Mode
         Opératoire Identitaire et Itératif
        </li>
-       <li>– Accompagnement individuel de 5 séances en 8 Heures</li>
+       <li>- Accompagnement individuel de 5 séances en 8 Heures</li>
        <li>
-        – Accompagnement Entretien familial d’identification du Mo2i des
+        - Accompagnement Entretien familial d’identification du Mo2i des
         adolescents
        </li>
-       <li>– Accompagnement couple mieux se connaitre et mieux communiquer</li>
-       <li>– Accompagnement entretien de genèse</li>
+       <li>- Accompagnement couple mieux se connaitre et mieux communiquer</li>
+       <li>- Accompagnement entretien de genèse</li>
        <li>
-        – Autre format spécifique possible adapté aux besoins de votre
+        - Autre format spécifique possible adapté aux besoins de votre
         organisation
        </li>
       </ul>
      </div>
     </div>
    </div>
-   <div className="p-6 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
+   <div className="p-6 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-4 bg-roseCustom">
     <div className="my-4">
      <p className="underline">
       <strong>Selon votre profil :</strong>

@@ -21,6 +21,8 @@ module.exports = {
    greyCustom: "#F5F5F5",
    greyTextCustom: "#7A7A7A",
    orange: "#FB9590",
+   beige: "#FFFEF5",
+   roseCustom: "#FFEADD",
    black: colors.black,
    white: colors.white,
    gray: colors.gray,
@@ -285,6 +287,7 @@ module.exports = {
    poppins: ["Poppins", "sans-serif"],
    playlist: ["Playlist"],
    lora: ["Lora"],
+   tenor:["Tenor"]
   },
   fontSize: {
    xs: ["0.75rem", { lineHeight: "1rem" }],

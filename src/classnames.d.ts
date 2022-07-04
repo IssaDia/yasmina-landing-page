@@ -24,6 +24,7 @@ export type ClassNames =
  | "font-bold"
  | "font-light"
  | "font-lora"
+ | "font-tenor"
  | "font-playlist"
  | "font-poppins"
  | "h-24"
