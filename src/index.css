@@ -19,3 +19,12 @@
  font-style: normal;
  font-display: swap;
 }
+
+@font-face {
+ font-family: "Tenor";
+ src: url("./assets/fonts/TenorSans.woff2") format("woff2"),
+  url("./assets/fonts/TenorSans.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+ font-display: swap;
+}
