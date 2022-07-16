@@ -20,7 +20,7 @@ const Review: React.FC<ReviewProps> = ({
    <div className="w-full pb-8 flex flex-col justify-items-center items-center">
     <div className=" h-32 w-32 xl:h-96 xl:w-96 m-4">
      <img
-      className="rounded-full h-32 w-32 xl:h-96 xl:w-96 cursor-pointer drop-shadow-lg"
+      className="rounded-full h-32 w-32 xl:h-96 xl:w-96 cursor-pointer drop-shadow-lg bg-cover"
       alt="photo du site de Yasmina Corman"
       src={`${
        imageSrc
@@ -34,7 +34,7 @@ const Review: React.FC<ReviewProps> = ({
       {name}
      </h5>
      <div className="m-4">{getScore(stars)}</div>
-     <p className="text-gray-500 text-sm font-lora xl:text-4xl">{review}</p>
+     <p className="text-gray-500 text-sm font-lora xl:text-4xl">{`"${review}"`}</p>
     </div>
    </div>
   </>

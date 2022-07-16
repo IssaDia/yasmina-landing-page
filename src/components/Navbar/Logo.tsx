@@ -7,7 +7,7 @@ export function Logo() {
   <Link to="/" className="navbar-brand grow -mt-2">
    <img
     src={logo}
-    className="w-28 h-28"
+    className="w-24 h-24"
     alt="logo du site de Yasmina Corman"
    ></img>
   </Link>
