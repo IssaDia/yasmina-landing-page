@@ -16,8 +16,15 @@ export const infos = [
  {
   name: "Mathilde R.",
   review:
-   "j’ai eu la chance d’avoir Yasmina à mes côtés qui était perspicace, investie à m’aider à tisser mon mode opératoire, à être en accord avec, de façon à l’utiliser plus consciemment dans ma vie de tous les jours, personnelle et professionnelle. ",
+   "J’ai eu la chance d’avoir Yasmina à mes côtés qui était perspicace, investie à m’aider à tisser mon mode opératoire, à être en accord avec, de façon à l’utiliser plus consciemment dans ma vie de tous les jours, personnelle et professionnelle. ",
   imageSrc: "rinck",
+  stars: 5,
+ },
+ {
+  name: "Nadia H.",
+  review:
+   " Plus qu'amener une prise de conscience, cette méthode m'a permis de capitaliser sur mes forces... que ce soit dans mon environnement personnel ou professionnel.",
+  imageSrc: "nadia",
   stars: 5,
  },
  {
