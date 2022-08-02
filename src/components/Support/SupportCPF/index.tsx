@@ -1,6 +1,6 @@
 import React from "react";
 
-const PersonalSupportCPF: React.FC = () => {
+const SupportCPF: React.FC = () => {
  return (
   <>
    <div className="flex lg:flex-row s:flex-col justify-center items-center space-x-2 mx-24 mb-8">
@@ -23,4 +23,4 @@ const PersonalSupportCPF: React.FC = () => {
  );
 };
 
-export default PersonalSupportCPF;
+export default SupportCPF;

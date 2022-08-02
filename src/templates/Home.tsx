@@ -2,9 +2,9 @@ import React from "react";
 import AboutMe from "../components/AboutMe/index";
 import SectionTitle from "../components/atoms/SectionTitle";
 import Services from "../components/Services";
-import PersonalSupport from "../components/PersonalSupport";
 import Reviews from "../components/Reviews/Container";
 import { useCalendlyModal } from "../hooks/useCalendlyModal";
+import Support from "../components/Support";
 
 const Home: React.FC = () => {
  const [handleCalendlyModal] = useCalendlyModal();
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
    <div id="personalSupport" className="pt-16">
     {" "}
     <SectionTitle title="Mes accompagnments Personnalisés" />
-    <PersonalSupport />
+    <Support />
    </div>
 
    <div id="mo2i" className="pt-16">

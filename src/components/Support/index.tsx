@@ -3,10 +3,10 @@ import React from "react";
 import mo2ipic2 from "../../assets/images/mo2i_pic2.jpeg";
 import { Button } from "issa-react-component-library";
 import { useCalendlyModal } from "../../hooks/useCalendlyModal";
-import PersonalSupportCardsContainer from "./PersonalSupportCardsContainer/index";
-import PersonalSupportCPF from "./PersonalSupportCPF";
+import SupportCardsContainer from "./SupportCardsContainer/index";
+import SupportCPF from "./SupportCPF";
 
-const PersonalSupport: React.FC = () => {
+const Support: React.FC = () => {
  const [handleCalendlyModal] = useCalendlyModal();
 
  return (
@@ -17,11 +17,11 @@ const PersonalSupport: React.FC = () => {
      className="w-full h-full object-fill"
      alt="photo du site de Yasmina Corman"
     />
-    {/* <PersonalSupportText /> */}
-    <PersonalSupportCardsContainer />
+    {/* <SupportText /> */}
+    <SupportCardsContainer />
    </div>
 
-   <PersonalSupportCPF />
+   <SupportCPF />
 
    <div className="flex lg:flex-row s:flex-col">
     <div className="mx-auto">
@@ -38,4 +38,4 @@ const PersonalSupport: React.FC = () => {
  );
 };
 
-export default PersonalSupport;
+export default Support;

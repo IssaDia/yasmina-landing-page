@@ -1,12 +1,12 @@
 import React from "react";
 
-interface PersonalSupportCardProps {
+interface SupportCardProps {
  imageName: string;
  title: string;
  paragraphs: string[];
 }
 
-const PersonalSupportCard: React.FC<PersonalSupportCardProps> = ({
+const SupportCard: React.FC<SupportCardProps> = ({
  imageName,
  title,
  paragraphs,
@@ -42,4 +42,4 @@ const PersonalSupportCard: React.FC<PersonalSupportCardProps> = ({
  );
 };
 
-export default PersonalSupportCard;
+export default SupportCard;
