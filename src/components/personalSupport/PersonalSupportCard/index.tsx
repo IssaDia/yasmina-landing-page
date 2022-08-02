@@ -22,7 +22,7 @@ const PersonalSupportCard: React.FC<PersonalSupportCardProps> = ({
      />
     </div>
     <div>
-     <p className="font-bold">{title}</p>
+     <p className="font-bold text-center my-4">{title}</p>
     </div>
     <div className="px-12 py-2">
      {paragraphs.map((paragraph, index) => {
