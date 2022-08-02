@@ -20,14 +20,16 @@ const Mo2iCard: React.FC<Mo2iCardProps> = ({
 }) => {
  return (
   <>
-   <div className=" grid justify-items-center h-full">
-    <div className="flex flex-col align-items-center items-center">
-     <p className="font-bold text-2xl">{title}</p>
+   <div className="h-full flex flex-col align-items-center items-center">
+    <div className="flex flex-col text-center">
+     <p className={` font-bold text-2xl ${subtitle ? "mt-14" : ""} `}>
+      {title}
+     </p>
      <p className="text-sm">{subtitle}</p>
     </div>
-    <div className="pt-4">
+    <div className="">
      <img
-      className="w-32 h-32"
+      className="w-28 h-28"
       src={`./mo2iAssets/cardImages/${imageName}.png`}
       alt=""
      />
