@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
  content: ["./src/**/*.{js,jsx,ts,tsx}"],
  presets: [],
- darkMode: false, // or 'media' or 'class'
+ darkMode: "media", // or 'media' or 'class'
  theme: {
   screens: {
    s: "320px",
@@ -287,7 +287,7 @@ module.exports = {
    poppins: ["Poppins", "sans-serif"],
    playlist: ["Playlist"],
    lora: ["Lora"],
-   tenor:["Tenor"]
+   tenor: ["Tenor"],
   },
   fontSize: {
    xs: ["0.75rem", { lineHeight: "1rem" }],
