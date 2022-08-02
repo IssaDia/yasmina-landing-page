@@ -1,7 +1,5 @@
 import React from "react";
 import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
-// import mo2ipic3 from "../../assets/images/mo2i_pic3.png";
-// import mo2ipic4 from "../../assets/images/mo2i_pic4.jpeg";
 import { Button } from "issa-react-component-library";
 import { handleButtonCalendly } from "../../lib/interfaces";
 import Mo2iCardContainer from "./Mo2iCardContainer";
