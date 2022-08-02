@@ -2,9 +2,9 @@ import React from "react";
 import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
 import { Button } from "issa-react-component-library";
 import { handleButtonCalendly } from "../../lib/interfaces";
-import Mo2iCardContainer from "./Mo2iCardContainer";
+import ServicesCardContainer from "./ServicesCardContainer";
 
-const Mo2i: React.FC<handleButtonCalendly> = (props: {
+const Services: React.FC<handleButtonCalendly> = (props: {
  handleShow: () => void;
 }) => {
  return (
@@ -19,11 +19,11 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      alt="photo du site de Yasmina Corman"
     />
    </div>
-   <Mo2iCardContainer />
+   <ServicesCardContainer />
    {/* <div className="italic text-sm text-center xl:text-4xl my-8">
     <p>
      Identifier ton Excellence d’action ou Mode Opératoire Identitaire et
-     Itératif (Mo2i)
+     Itératif (Services)
     </p>
    </div>
    <div className="flex s:flex-col">
@@ -103,7 +103,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
     </div>
     <div className="lg:w-1/2 s:w-full flex flex-col p-4 s:text-sm lg:text:6xl xl:text-4xl bg-roseCustom">
      <div>
-      <p className="underline font-bold py-4">le Mo2i pour tous:</p>
+      <p className="underline font-bold py-4">le Services pour tous:</p>
      </div>
      <div className="space-y-4">
       <div>
@@ -112,7 +112,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
         Engager une dynamique de reconnaissance et de mobilisation de
         l’excellence d’Action a des <strong>bénéfices spectaculaires</strong>{" "}
         sur la performance individuelle et collective.
-        <br /> Ton organisation peut commencer par identifier le Mo2i de ses{" "}
+        <br /> Ton organisation peut commencer par identifier le Services de ses{" "}
         <strong>dirigeants</strong>, de ses <strong>managers </strong> et{" "}
         <strong>talents clés</strong>. Puis elle peut s&apos;adresser aux
         équipes en fonction des <strong>enjeux stratégiques</strong> du moment.
@@ -147,7 +147,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
          une offre de service qui « accroche » tes clients « naturels »
         </strong>
         , c’est-à-dire ceux qui souffrent de ne pas t&apos;avoir rencontré et
-        donc de ne pas avoir encore profité de ce que ton Mo2i peut changer
+        donc de ne pas avoir encore profité de ce que ton Services peut changer
        </p>
       </div>
      </div>
@@ -188,7 +188,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
        Engager une dynamique de reconnaissance et de mobilisation de
        l’excellence d’Action a des bénéfices spectaculaires sur la performance
        individuelle et collective. Ton organisation peut commencer par
-       identifier le Mo2i de ses dirigeants, de ses managers et talents clés.
+       identifier le Services de ses dirigeants, de ses managers et talents clés.
        Puis elle peut adresser les équipes en fonction des enjeux stratégiques
        du moment.
       </p>
@@ -213,7 +213,7 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
        d’excellence d’action identifié et reconnu, la suite logique est de le
        transformer en une offre de service qui « accroche » tes clients «
        naturels », c’est-à-dire ceux qui souffrent de ne pas t&apos;avoir
-       rencontré et donc de ne pas avoir encore profité de ce que ton Mo2i peut
+       rencontré et donc de ne pas avoir encore profité de ce que ton Services peut
        changer
       </p>
      </div>
@@ -234,4 +234,4 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
  );
 };
 
-export default Mo2i;
+export default Services;
