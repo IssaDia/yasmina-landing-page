@@ -1,10 +1,10 @@
 import React from "react";
 import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
-import mo2ipic3 from "../../assets/images/mo2i_pic3.png";
-import mo2ipic4 from "../../assets/images/mo2i_pic4.jpeg";
-
+// import mo2ipic3 from "../../assets/images/mo2i_pic3.png";
+// import mo2ipic4 from "../../assets/images/mo2i_pic4.jpeg";
 import { Button } from "issa-react-component-library";
 import { handleButtonCalendly } from "../../lib/interfaces";
+import Mo2iCardContainer from "./Mo2iCardContainer";
 
 const Mo2i: React.FC<handleButtonCalendly> = (props: {
  handleShow: () => void;
@@ -21,7 +21,8 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
      alt="photo du site de Yasmina Corman"
     />
    </div>
-   <div className="italic text-sm text-center xl:text-4xl my-8">
+   <Mo2iCardContainer />
+   {/* <div className="italic text-sm text-center xl:text-4xl my-8">
     <p>
      Identifier ton Excellence d’action ou Mode Opératoire Identitaire et
      Itératif (Mo2i)
@@ -161,21 +162,21 @@ const Mo2i: React.FC<handleButtonCalendly> = (props: {
        <strong>
         Contactes moi pour mettre en place le format qui te correspond.
        </strong>
-      </p>
-      <div className="flex lg:flex-row s:flex-col">
-       <div className="mx-auto">
-        <Button
-         className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
-         onClick={() => props.handleShow()}
-         data-test="showCalendlyModal"
-        >
-         Booker mon entretien gratuit
-        </Button>
-       </div>
-      </div>
-     </div>
+      </p> */}
+   <div className="flex lg:flex-row s:flex-col">
+    <div className="mx-auto">
+     <Button
+      className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+      onClick={() => props.handleShow()}
+      data-test="showCalendlyModal"
+     >
+      Booker mon entretien gratuit
+     </Button>
     </div>
    </div>
+   {/* </div>
+    </div>
+   </div> */}
    {/* <div className="p-6 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-4 bg-roseCustom">
     <div className="my-4">
      <p className="underline">

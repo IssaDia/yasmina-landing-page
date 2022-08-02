@@ -28,7 +28,7 @@ export const Nav: React.FC<NavProps> = ({ isOpen }) => {
       href="#aboutme"
       onClick={() => handleClick}
      >
-      Qui sommes nous?
+      Qui suis-je
      </a>
     </li>
     <li className="flex flex-row">
@@ -36,12 +36,12 @@ export const Nav: React.FC<NavProps> = ({ isOpen }) => {
       className="text-md uppercase hover:text-orange text-black"
       href="#personalSupport"
      >
-      Les accompagnements personnalisés
+      Mes accompagnements personnalisés
      </a>
     </li>
     <li className="flex flex-row">
      <a className="text-md uppercase hover:text-orange text-black" href="#mo2i">
-      MO2i
+      Le Mo2i pour tous
      </a>
     </li>
     <li className="flex flex-row">
