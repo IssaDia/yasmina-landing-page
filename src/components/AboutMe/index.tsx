@@ -8,13 +8,12 @@ import {
  faLinkedin,
  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-
 import { Button } from "issa-react-component-library";
-import { handleButtonCalendly } from "../../lib/interfaces";
+import { useCalendlyModal } from "../../hooks/useCalendlyModal";
 
-const AboutMe: React.FC<handleButtonCalendly> = (props: {
- handleShow: () => void;
-}) => {
+const AboutMe: React.FC = () => {
+ const [handleCalendlyModal] = useCalendlyModal();
+
  return (
   <section className="">
    <div className="lg:flex lg:flex-row">
@@ -41,7 +40,7 @@ const AboutMe: React.FC<handleButtonCalendly> = (props: {
       <div className="mx-auto">
        <Button
         className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
-        onClick={() => props.handleShow()}
+        onClick={handleCalendlyModal as () => void}
         data-test="showCalendlyModal"
        >
         Booker mon entretien gratuit
