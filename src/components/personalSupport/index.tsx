@@ -4,6 +4,7 @@ import mo2ipic2 from "../../assets/images/mo2i_pic2.jpeg";
 import { Button } from "issa-react-component-library";
 import { useCalendlyModal } from "../../hooks/useCalendlyModal";
 import PersonalSupportCardsContainer from "./PersonalSupportCardsContainer/index";
+import PersonalSupportCPF from "./PersonalSupportCPF";
 
 const PersonalSupport: React.FC = () => {
  const [handleCalendlyModal] = useCalendlyModal();
@@ -19,6 +20,9 @@ const PersonalSupport: React.FC = () => {
     {/* <PersonalSupportText /> */}
     <PersonalSupportCardsContainer />
    </div>
+
+   <PersonalSupportCPF />
+
    <div className="flex lg:flex-row s:flex-col">
     <div className="mx-auto">
      <Button
