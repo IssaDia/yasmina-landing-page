@@ -1,8 +1,8 @@
 import React from "react";
 import AboutMe from "../components/AboutMe/index";
 import SectionTitle from "../components/atoms/SectionTitle";
-import Services from "../components/Services/index";
-import PersonalSupport from "../components/PersonalSupport/index";
+import Services from "../components/Services";
+import PersonalSupport from "../components/PersonalSupport";
 import Reviews from "../components/Reviews/Container";
 import { useCalendlyModal } from "../hooks/useCalendlyModal";
 
