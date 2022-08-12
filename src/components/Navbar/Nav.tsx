@@ -14,7 +14,7 @@ export const Nav: React.FC<NavProps> = ({ isOpen }) => {
     className={` ${
      !isOpen
       ? "flex flex-row space-x-3 mx-2 text-sm"
-      : "md:flex md:flex-col space-y-4 my-2 items-center text-sm lg:flew-row"
+      : "md:flex md:flex-col space-y-2 my-2 text-sm lg:flew-row"
     }`}
    >
     <li className="">

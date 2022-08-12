@@ -14,7 +14,7 @@ const Support: React.FC = () => {
    <div className="w-full xl:text-center xl:text-3xl flex s:flex-col md:flex-col lg:flex-col">
     <img
      src={mo2ipic2}
-     className="w-full h-full object-fill"
+     className="w-full h-[1080px] object-fill"
      alt="photo du site de Yasmina Corman"
     />
     {/* <SupportText /> */}

@@ -5,10 +5,9 @@ import { Logo } from "./Logo";
 import { Nav } from "./Nav";
 import { Button } from "issa-react-component-library";
 import { handleButtonCalendly } from "../../lib/interfaces/index";
+import { useCalendlyModal } from "../../hooks/useCalendlyModal";
 
-const Navbar: React.FC<handleButtonCalendly> = (props: {
- handleShow: () => void;
-}) => {
+const Navbar: React.FC<handleButtonCalendly> = () => {
  const navIsScrolling = useHandleNavbarScrollingOnStart();
 
  const [navIsOpened, setNavIsOpened] = useState<boolean>(false);
@@ -16,6 +15,8 @@ const Navbar: React.FC<handleButtonCalendly> = (props: {
  const handleNavbar = () => {
   setNavIsOpened((prev) => !prev);
  };
+
+ const [handleCalendlyModal] = useCalendlyModal();
 
  return (
   <>
@@ -36,11 +37,11 @@ const Navbar: React.FC<handleButtonCalendly> = (props: {
      <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center justify-center items-center s:mb-4 flex flex-col lg:h-auto">
       <Nav isOpen={navIsOpened} />
       <Button
-       className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl"
-       onClick={() => props.handleShow()}
+       className="text-sm p-3 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+       onClick={handleCalendlyModal as () => void}
        data-test="showCalendlyModal"
       >
-       Réserver un entretien gratuit
+       Booker mon entretien gratuit
       </Button>
      </div>
     </div>
