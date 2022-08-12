@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
-const PersonalSupportText: React.FC = () => {
+const SupportText: React.FC = () => {
  return (
   <div className="p-6 s:text-sm lg:text:6xl xl:text-4xl">
    <p>
@@ -91,4 +91,4 @@ const PersonalSupportText: React.FC = () => {
  );
 };
 
-export default PersonalSupportText;
+export default SupportText;

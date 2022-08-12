@@ -1,38 +1,40 @@
 import React from "react";
 
-interface PersonalSupportCardProps {
+interface SupportCardProps {
  imageName: string;
  title: string;
  paragraphs: string[];
 }
 
-const PersonalSupportCard: React.FC<PersonalSupportCardProps> = ({
+const SupportCard: React.FC<SupportCardProps> = ({
  imageName,
  title,
  paragraphs,
 }) => {
  return (
   <>
-   <div className="border-transparent rounded shadow-lg grid justify-items-center h-full">
-    <div className="pt-4">
+   <div className="border-transparent rounded shadow-lg flex flex-col items-center h-full space-y-8 pb-4">
+    <div className="mt-8">
      <img
-      className="w-32 h-32"
+      className="w-48 h-48"
       src={`./personalSupportAssets/cardImages/${imageName}.png`}
       alt=""
      />
     </div>
-    <div>
-     <p className="font-bold text-center my-4">{title}</p>
+    <div className="h-6">
+     <p className="font-bold text-center w-full">{title}</p>
     </div>
-    <div className="px-12 py-2">
+    <div className="px-8 py-2">
      {paragraphs.map((paragraph, index) => {
       return (
        <div className="flex flex-row space-y-2 items-center" key={index}>
         <img
          src="./personalSupportAssets/icons/arrowCheckIcon.png"
-         className="w-5 h-5 mr-2"
+         className="w-4 h-4 mr-2 mt-[10px]"
         />
-        <p key={index}>{paragraph}</p>
+        <p className="text-sm" key={index}>
+         {paragraph}
+        </p>
        </div>
       );
      })}
@@ -42,4 +44,4 @@ const PersonalSupportCard: React.FC<PersonalSupportCardProps> = ({
  );
 };
 
-export default PersonalSupportCard;
+export default SupportCard;

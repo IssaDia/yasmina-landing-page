@@ -1,6 +1,6 @@
 import React from "react";
 
-const PersonalSupportCPF: React.FC = () => {
+const SupportCPF: React.FC = () => {
  return (
   <>
    <div className="flex lg:flex-row s:flex-col justify-center items-center space-x-2 mx-24 mb-8">
@@ -13,9 +13,9 @@ const PersonalSupportCPF: React.FC = () => {
       conditions.
      </p>
      <p>
-      Pour le financement CPF, <span>Contactez moi</span>
-      <span className="text-salmon">yasminacorman@gmail.com</span> ou au{" "}
-      <span className="text-salmon">07.60.43.36.09</span>
+      Pour le financement CPF, <span>Contactez moi sur</span>{" "}
+      <span className="text-orange"> yasminacorman@gmail.com</span> ou au{" "}
+      <span className="text-orange">07.60.43.36.09</span>
      </p>
     </div>
    </div>
@@ -23,4 +23,4 @@ const PersonalSupportCPF: React.FC = () => {
  );
 };
 
-export default PersonalSupportCPF;
+export default SupportCPF;

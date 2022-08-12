@@ -3,7 +3,7 @@ export const cardData = [
   imageName: "mo2icard1",
   title: "Particuliers et salariés",
   subtitle:
-   "(Salariés, retraités, fururs retraités, en rechercher d'emploi...)",
+   "(Salariés, retraités, futurs retraités, en rechercher d'emploi...)",
   content: [
    { icon: "arrowCheckIcon", text: "Trouver du sens" },
    { icon: "arrowCheckIcon", text: "Orienter ta carriére" },
@@ -28,7 +28,7 @@ export const cardData = [
    { icon: "starIcon1", text: "Collaborateurs" },
    { icon: "starIcon2", text: "Talents clés" },
    { icon: "starIcon1", text: "Managers" },
-   { icon: "starIcon1", text: "Performance individuelle" },
+   { icon: "starIcon2", text: "Performance individuelle" },
   ],
  },
  {

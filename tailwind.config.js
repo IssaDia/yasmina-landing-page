@@ -4,6 +4,7 @@ module.exports = {
  content: ["./src/**/*.{js,jsx,ts,tsx}"],
  presets: [],
  darkMode: "media", // or 'media' or 'class'
+ mportant: true,
  theme: {
   screens: {
    s: "320px",
