@@ -3,10 +3,9 @@ import { mount } from "enzyme";
 import Navbar from "./index";
 import { BrowserRouter } from "react-router-dom";
 
-const handleShow = jest.fn();
 const wrapper = mount(
  <BrowserRouter>
-  <Navbar handleShow={handleShow} />
+  <Navbar />
  </BrowserRouter>
 );
 describe("Navbar tests", () => {

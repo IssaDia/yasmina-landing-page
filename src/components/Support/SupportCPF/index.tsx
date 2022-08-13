@@ -14,8 +14,14 @@ const SupportCPF: React.FC = () => {
      </p>
      <p>
       Pour le financement CPF, <span>Contactez moi sur</span>{" "}
-      <span className="text-orange"> yasminacorman@gmail.com</span> ou au{" "}
-      <span className="text-orange">07.60.43.36.09</span>
+      <span className="text-orange">
+       {" "}
+       <a href="mailto:yasminacorman@gmail.com">yasminacorman@gmail.com</a>
+      </span>{" "}
+      ou au{" "}
+      <span className="text-orange">
+       <a href="tel:0760433609">07.60.43.36.09</a>
+      </span>
      </p>
     </div>
    </div>

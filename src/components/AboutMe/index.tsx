@@ -9,10 +9,14 @@ import {
  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "issa-react-component-library";
-import { useCalendlyModal } from "../../hooks/useCalendlyModal";
+import { usCalendlyContext } from "../../App";
 
 const AboutMe: React.FC = () => {
- const [handleCalendlyModal] = useCalendlyModal();
+ const { calendlyIsActive, setCalendlyIsActive } = usCalendlyContext();
+ const handleCalendlyModal = () => {
+  setCalendlyIsActive(!calendlyIsActive);
+  return;
+ };
 
  return (
   <section className="">
