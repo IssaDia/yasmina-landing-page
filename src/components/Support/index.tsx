@@ -2,13 +2,17 @@ import React from "react";
 // import PersonalSupportText from "./PersonalSupportText";
 import mo2ipic2 from "../../assets/images/mo2i_pic2.jpeg";
 import { Button } from "issa-react-component-library";
-import { useCalendlyModal } from "../../hooks/useCalendlyModal";
 import SupportCardsContainer from "./SupportCardsContainer/index";
 import SupportCPF from "./SupportCPF";
+import { usCalendlyContext } from "../../App";
 
 const Support: React.FC = () => {
- const [handleCalendlyModal] = useCalendlyModal();
+ const { calendlyIsActive, setCalendlyIsActive } = usCalendlyContext();
 
+ const handleCalendlyModal = () => {
+  setCalendlyIsActive(!calendlyIsActive);
+  return;
+ };
  return (
   <>
    <div className="w-full xl:text-center xl:text-3xl flex s:flex-col md:flex-col lg:flex-col">
@@ -27,7 +31,7 @@ const Support: React.FC = () => {
     <div className="mx-auto">
      <Button
       className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
-      onClick={() => handleCalendlyModal}
+      onClick={handleCalendlyModal as () => void}
       data-test="showCalendlyModal"
      >
       Booker mon entretien gratuit

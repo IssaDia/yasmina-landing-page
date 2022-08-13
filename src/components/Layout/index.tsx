@@ -1,25 +1,19 @@
 import React from "react";
-import { useCalendlyModal } from "../../hooks/useCalendlyModal";
+import { usCalendlyContext } from "../../App";
 import { CalendlyModal } from "../Calendly";
 import Footer from "../Footer";
 import Jumbotron from "../Jumbotron";
 import Navbar from "../Navbar";
 
 const Layout: React.FC = ({ children }) => {
- const [calendlyModalIsActive, handleCalendlyModal] = useCalendlyModal();
+ const { calendlyIsActive } = usCalendlyContext();
 
- console.log("layouyt", calendlyModalIsActive);
-
+ console.log(calendlyIsActive);
  return (
   <>
    <div className="font-poppins container-fluid">
-    <Navbar handleShow={handleCalendlyModal as () => void} />
-    {calendlyModalIsActive && (
-     <CalendlyModal
-      show={calendlyModalIsActive as boolean}
-      handleShow={handleCalendlyModal as () => void}
-     />
-    )}
+    <Navbar />
+    {calendlyIsActive && <CalendlyModal />}
     <Jumbotron />
     {children}
     <Footer></Footer>

@@ -1,10 +1,15 @@
 import React from "react";
 import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
 import mo2ipic3 from "../../assets/images/mo2i_pic3.png";
-import { handleButtonCalendly } from "../../lib/interfaces";
 import ServicesCardContainer from "./ServicesCardContainer";
 
-const Services: React.FC<handleButtonCalendly> = () => {
+const Services: React.FC = () => {
+ //  const { calendlyIsActive, setCalendlyIsActive } = usCalendlyContext();
+
+ //  const handleCalendlyModal = () => {
+ //   setCalendlyIsActive(!calendlyIsActive);
+ //   return;
+ //  };
  return (
   <>
    <div>
@@ -168,7 +173,7 @@ const Services: React.FC<handleButtonCalendly> = () => {
         src={`./mo2iAssets/icons/arrowIcon.png`}
         className="w-4 h-4 mr-2"
        />{" "}
-       Orientation professionnel
+       Orientation professionnelle
       </li>
       <li className="flex flex-row">
        {" "}

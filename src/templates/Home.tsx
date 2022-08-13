@@ -3,11 +3,9 @@ import AboutMe from "../components/AboutMe/index";
 import SectionTitle from "../components/atoms/SectionTitle";
 import Services from "../components/Services";
 import Reviews from "../components/Reviews/Container";
-import { useCalendlyModal } from "../hooks/useCalendlyModal";
 import Support from "../components/Support";
 
 const Home: React.FC = () => {
- const [handleCalendlyModal] = useCalendlyModal();
  return (
   <>
    <div id="aboutme" className="pt-16">
@@ -24,7 +22,7 @@ const Home: React.FC = () => {
    <div id="mo2i" className="pt-16">
     {" "}
     <SectionTitle title="Le Mo2i pour tous" />
-    <Services handleShow={handleCalendlyModal as () => void} />
+    <Services />
    </div>
 
    <div id="reviews" className="pt-16">
