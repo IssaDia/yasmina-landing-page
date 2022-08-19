@@ -20,8 +20,8 @@ const Home: React.FC = () => {
    </div>
 
    <div id="mo2i" className="pt-16">
-    {" "}
-    <SectionTitle title="Le Mo2i pour tous" />
+    <SectionTitle title="Mo2i" />
+
     <Services />
    </div>
 

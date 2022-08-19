@@ -13,7 +13,7 @@ const SupportCard: React.FC<SupportCardProps> = ({
 }) => {
  return (
   <>
-   <div className="border-transparent rounded shadow-lg flex flex-col items-center h-full space-y-8 pb-4">
+   <div className="border-transparent rounded shadow-lg flex flex-col items-center h-full space-y-8 pb-12">
     <div className="mt-8">
      <img
       className="w-48 h-48"
@@ -24,7 +24,7 @@ const SupportCard: React.FC<SupportCardProps> = ({
     <div className="h-6">
      <p className="font-bold text-center w-full">{title}</p>
     </div>
-    <div className="px-8 py-2">
+    <div className="px-8">
      {paragraphs.map((paragraph, index) => {
       return (
        <div className="flex flex-row space-y-2 items-center" key={index}>

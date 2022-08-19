@@ -37,7 +37,7 @@ export const Nav: React.FC<NavProps> = ({ isOpen }) => {
     </li>
     <li className="flex flex-row">
      <a className="text-md uppercase hover:text-orange text-black" href="#mo2i">
-      Le Mo2i pour tous
+      Mo2i
      </a>
     </li>
     <li className="flex flex-row">

@@ -15,6 +15,7 @@ module.exports = {
    xxl: "3072px",
   },
   colors: {
+   roseDark: "#F95C82",
    transparent: "transparent",
    current: "currentColor",
    salmon: "#EFA9A3",

@@ -2,150 +2,50 @@ import React from "react";
 import mo2ipic1 from "../../assets/images/mo2i_pic1.png";
 import mo2ipic3 from "../../assets/images/mo2i_pic3.png";
 import ServicesCardContainer from "./ServicesCardContainer";
+import SectionTitle from "../../components/atoms/SectionTitle/index";
+import { usCalendlyContext } from "../../App";
+import { Button } from "issa-react-component-library";
 
 const Services: React.FC = () => {
- //  const { calendlyIsActive, setCalendlyIsActive } = usCalendlyContext();
+ const { calendlyIsActive, setCalendlyIsActive } = usCalendlyContext();
 
- //  const handleCalendlyModal = () => {
- //   setCalendlyIsActive(!calendlyIsActive);
- //   return;
- //  };
+ const handleCalendlyModal = () => {
+  setCalendlyIsActive(!calendlyIsActive);
+  return;
+ };
  return (
   <>
    <div>
-    <div className="flex lg:flex-row s:flex-col lg:h-screen">
-     <div className="lg:w-1/2">
-      <img
-       src={mo2ipic3}
-       className="w-full lg:h-screen"
-       alt="photo du site de Yasmina Corman"
-      />
-     </div>
-     <div className="lg:w-1/2 s:w-full flex flex-col space-y-4 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-8">
-      <div>
-       <p className="underline">
-        <strong>Les Bénéfices</strong>
-       </p>
-      </div>
-      <div>
-       <p>
-        La seule méthode efficace est celle qui permet d’identifier les
-        séquences d’action que tu maîtrises non consciemment avec fluidité,
-        élégance et efficacité et qui aboutissent à un résultat considéré comme
-        « excellent ». La seule méthode qui part de toi et qui ne te met pas
-        dans une case.
-       </p>
-      </div>
-      <div className="pt-12">
-       <ul className="space-y-2">
-        <li className="flex flex-row">
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />
-         Quel est ton super pouvoir
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Trouver et comprendre sa juste place
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Être reconnu
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Faire la différence
-        </li>
-        <li className="flex flex-row">
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />
-         Mieux communiquer sur comment tu fais
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Lancer et/ou développer ton actvité
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Oeuvrer dans le plaisir et la sérénité financière
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Donner un nouvel élan à ta vie
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Cohésion d&apos;équipe
-        </li>
-        <li className="flex flex-row">
-         {" "}
-         <img
-          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
-          className="w-4 h-4 mr-2"
-         />{" "}
-         Faire la différence
-        </li>
-       </ul>
-      </div>
-     </div>
+    <div className="text-center italic my-8 text-sm xl:text-4xl">
+     <p>Connaissance de soi, Trouver ton excellence d&apos;action</p>
     </div>
-   </div>
-   <div className="text-center italic my-16 text-sm xl:text-4xl">
-    <p>Connaissance de soi, Trouver ton excellence d&apos;action</p>
-   </div>
-   <div>
-    <img
-     src={mo2ipic1}
-     className="w-full lg:h-screen"
-     alt="photo du site de Yasmina Corman"
-    />
-   </div>
-   <ServicesCardContainer />
-   <div className="italic text-sm text-center xl:text-4xl my-8">
-    <p>
-     Identifier ton Excellence d’action ou Mode Opératoire Identitaire et
-     Itératif (Services)
-    </p>
-   </div>
-   <div className="flex s:flex-col">
+    <div>
+     <img
+      src={mo2ipic1}
+      className="w-full lg:h-screen"
+      alt="photo du site de Yasmina Corman"
+     />
+    </div>
+    <div className="text-center italic my-6 text-sm xl:text-4xl">
+     <p>
+      Identifier ton Excellence d’action ou Mode Opératoire Identitaire et
+      Itératif (MO2I ©)
+     </p>
+    </div>
+
     <div className="w-full space-y-4 s:p-4 s:text-sm xl:text-4xl xl:space-y-8 lg:text:6xl">
-     <p className="">
+     <p>
       Un modèle et une méthode découverts par Joël Guillon pour te permettre
       d’identifier et de t&apos;approprier ton Excellence d’Action, celle qui te
       rend unique et irremplaçable dans la maîtrise et la transformation de
       certaines situations dans la fluidité, l&apos;élégeance,
       l&apos;efficacité, la facilité et le plaisir !
+     </p>
+     <p>
+      La seule méthode efficace est celle qui permet d’identifier les séquences
+      d’action que tu maîtrises non consciemment avec fluidité, élégance et
+      efficacité et qui aboutissent à un résultat considéré comme « excellent ».
+      La seule méthode qui part de toi et qui ne te met pas dans une case.
      </p>
      <p className="underline">
       <strong>Tes Besoins</strong>
@@ -153,7 +53,7 @@ const Services: React.FC = () => {
      <ul className="space-y-2">
       <li className="flex flex-row">
        <img src={`./mo2iAssets/icons/arrowIcon.png`} className="w-4 h-4 mr-2" />
-       Trouver du sens et œuvrer dans le plaisir
+       Trouve du sens et œuvre dans le plaisir
       </li>
       <li className="flex flex-row">
        {" "}
@@ -161,11 +61,11 @@ const Services: React.FC = () => {
         src={`./mo2iAssets/icons/arrowIcon.png`}
         className="w-4 h-4 mr-2"
        />{" "}
-       Définir ta singularité dans l’action
+       Définis ta singularité dans l’action
       </li>
       <li className="flex flex-row">
        <img src={`./mo2iAssets/icons/arrowIcon.png`} className="w-4 h-4 mr-2" />{" "}
-       Etre repéré et distingué par ceux qui ont le plus besoin de toi
+       Sois repéré et distingué par ceux qui ont le plus besoin de toi
       </li>
       <li className="flex flex-row">
        {" "}
@@ -181,18 +81,132 @@ const Services: React.FC = () => {
         src={`./mo2iAssets/icons/arrowIcon.png`}
         className="w-4 h-4 mr-2"
        />{" "}
-       Trouver et comprendre sa place
-      </li>
-      <li className="flex flex-row">
-       <img src={`./mo2iAssets/icons/arrowIcon.png`} className="w-4 h-4 mr-2" />{" "}
-       Mettre des mots sur ce que tu fais d’excellent et sur la manière de le
-       faire, (ce que les tests habituels ne peuvent pas dire de toi).
+       Trouve et comprend ta place
       </li>
       <li className="flex flex-row">
        <img src={`./mo2iAssets/icons/arrowIcon.png`} className="w-4 h-4 mr-2" />{" "}
        Qu&apos;apportes tu le plus aux autres ?
       </li>
+      <li className="flex flex-row">
+       <img src={`./mo2iAssets/icons/arrowIcon.png`} className="w-4 h-4 mr-2" />{" "}
+       Mets des mots sur ce que tu fais d’excellent et sur la manière de le
+       faire (ce que les tests habituels ne peuvent pas dire de toi).
+      </li>
      </ul>
+    </div>
+
+    <div className="flex lg:flex-row s:flex-col lg:h-screen">
+     <div className="lg:w-1/2">
+      <img
+       src={mo2ipic3}
+       className="w-full lg:h-screen"
+       alt="photo du site de Yasmina Corman"
+      />
+     </div>
+
+     <div className="lg:w-1/2 s:w-full flex flex-col space-y-2 lg:p-8 s:p-4 s:text-sm lg:text:6xl xl:text-4xl xl:space-y-4">
+      <div>
+       <p className="underline pt-8">
+        <strong>Tes Bénéfices</strong>
+       </p>
+      </div>
+      <div></div>
+      <div>
+       <ul className="space-y-2">
+        <li className="flex flex-row">
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />
+         Quel est ton super pouvoir
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Trouve et comprend ta juste place
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Sois reconnu
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Fais la différence
+        </li>
+        <li className="flex flex-row">
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />
+         Mieux communiquer sur comment tu fais
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Lance et/ou développe ton actvité
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Oeuvre dans le plaisir et la sérénité financière
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Donne un nouvel élan à ta vie
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Favorise ta cohésion d&apos;équipe
+        </li>
+        <li className="flex flex-row">
+         {" "}
+         <img
+          src={`./mo2iAssets/icons/arrowCheckIcon.png`}
+          className="w-4 h-4 mr-2"
+         />{" "}
+         Fais la différence
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <SectionTitle title="Le Mo2i pour tous" />
+   <ServicesCardContainer />
+   <div className="flex lg:flex-row s:flex-col pt-12">
+    <div className="mx-auto">
+     <Button
+      className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
+      onClick={() => handleCalendlyModal()}
+      data-test="showCalendlyModal"
+     >
+      Booker mon entretien gratuit
+     </Button>
     </div>
    </div>
    {/* <div className="flex lg:flex-row-reverse s:flex-col lg:h-screen">
@@ -263,17 +277,7 @@ const Services: React.FC = () => {
         Contactes moi pour mettre en place le format qui te correspond.
        </strong>
       </p>
-      <div className="flex lg:flex-row s:flex-col">
-       <div className="mx-auto">
-        <Button
-         className="text-sm p-4 bg-orange text-white font-bold border-2 hover:text-orange hover:bg-white hover:border-orange rounded-3xl xl:text-4xl"
-         onClick={() => props.handleShow()}
-         data-test="showCalendlyModal"
-        >
-         Booker mon entretien gratuit
-        </Button>
-       </div>
-      </div>
+     
      </div> */}
    {/* </div>
    </div> */}

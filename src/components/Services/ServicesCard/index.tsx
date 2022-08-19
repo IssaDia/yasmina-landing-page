@@ -27,7 +27,7 @@ const Mo2iCard: React.FC<Mo2iCardProps> = ({
     </div>
     <div className="mt-8">
      <img
-      className="w-28 h-28"
+      className="w-28 h-28 last:w-48 last:h-48"
       src={`./mo2iAssets/cardImages/${imageName}.png`}
       alt=""
      />

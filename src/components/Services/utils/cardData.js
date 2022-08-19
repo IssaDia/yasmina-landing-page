@@ -2,19 +2,18 @@ export const cardData = [
  {
   imageName: "mo2icard1",
   title: "Particuliers et salariés",
-  subtitle:
-   "(Salariés, retraités, futurs retraités, en rechercher d'emploi...)",
+  subtitle: "(Salariés, retraités, futurs retraités, en recherche d'emploi...)",
   content: [
-   { icon: "arrowCheckIcon", text: "Trouver du sens" },
-   { icon: "arrowCheckIcon", text: "Orienter ta carriére" },
-   { icon: "arrowCheckIcon", text: "Etre reconnu" },
+   { icon: "arrowCheckIcon", text: "Trouve du sens" },
+   { icon: "arrowCheckIcon", text: "Oriente ta carriére" },
+   { icon: "arrowCheckIcon", text: "Sois reconnu" },
    { icon: "arrowCheckIcon", text: "Tes talents" },
    { icon: "arrowCheckIcon", text: "Ton plaisir d'agir" },
-   { icon: "arrowCheckIcon", text: "Trouver un poste" },
+   { icon: "arrowCheckIcon", text: "Trouve un poste" },
 
    {
     icon: "arrowCheckIcon",
-    text: "Oeuvrer à contribuer au monde et à la societé",
+    text: "Oeuvre à contribuer au monde et à la societé",
    },
   ],
  },
@@ -38,9 +37,9 @@ export const cardData = [
    { icon: "arrowIcon", text: "Une offre puissante" },
    { icon: "arrowIcon", text: "Ressources nécessaires" },
    { icon: "arrowIcon", text: "Te différencier clairement" },
-   { icon: "arrowIcon", text: "Accrocher tes clients naturels" },
-   { icon: "arrowIcon", text: "Définir un plan d'action" },
-   { icon: "arrowIcon", text: "Passer à l'action en toute confiance" },
+   { icon: "arrowIcon", text: "Accroche tes clients naturels" },
+   { icon: "arrowIcon", text: "Définis un plan d'action" },
+   { icon: "arrowIcon", text: "Passe à l'action en toute confiance" },
   ],
  },
 ];
