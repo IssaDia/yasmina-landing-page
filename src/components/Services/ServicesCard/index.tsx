@@ -27,12 +27,12 @@ const Mo2iCard: React.FC<Mo2iCardProps> = ({
     </div>
     <div className="mt-8">
      <img
-      className="w-28 h-28 last:w-48 last:h-48"
+      className="w-28 h-28"
       src={`./mo2iAssets/cardImages/${imageName}.png`}
       alt=""
      />
     </div>
-    <div className="px-12 py-2 mt-4">
+    <div className="px-24 py-2 mt-4 w-full">
      {content.map((item, index) => {
       return (
        <div className="flex flex-row space-y-2" key={index}>
