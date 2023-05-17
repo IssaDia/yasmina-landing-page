@@ -15,17 +15,18 @@ const Support: React.FC = () => {
  };
  return (
   <>
-   <div className="w-full xl:text-center xl:text-3xl flex s:flex-col md:flex-col lg:flex-col">
+   <div className="w-full xl:text-center xl:text-3xl flex items-center s:flex-col md:flex-col lg:flex-col">
     <img
      src={mo2ipic2}
-     className="w-full h-[1080px] object-fill"
+     className="w-2/3"
      alt="photo du site de Yasmina Corman"
     />
-    {/* <SupportText /> */}
+
     <SupportCardsContainer />
    </div>
-
-   <SupportCPF />
+   <div className="flex flex-row justify-center items-center">
+    <SupportCPF />
+   </div>
 
    <div className="flex lg:flex-row s:flex-col">
     <div className="mx-auto">

@@ -11,7 +11,7 @@ export const CalendlyModalCloseButton: React.FC = () => {
  return (
   <button
    onClick={handleCalendlyModal as () => void}
-   className="cursor-pointer text-black rounded-lg self-end text-6xl mr-10"
+   className="cursor-pointer text-black text-5xl fixed"
    data-test="closeModal"
   >
    x

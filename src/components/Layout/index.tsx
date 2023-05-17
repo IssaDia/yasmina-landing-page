@@ -8,7 +8,6 @@ import Navbar from "../Navbar";
 const Layout: React.FC = ({ children }) => {
  const { calendlyIsActive } = usCalendlyContext();
 
- console.log(calendlyIsActive);
  return (
   <>
    <div className="font-poppins container-fluid">

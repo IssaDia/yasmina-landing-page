@@ -17,7 +17,7 @@ const Review: React.FC<ReviewProps> = ({
 }: ReviewProps) => {
  return (
   <>
-   <div className="w-full pb-8 flex flex-col justify-items-center items-center">
+   <div className="z-0 w-full pb-8 flex flex-col justify-items-center items-center">
     <div className=" h-32 w-32 xl:h-96 xl:w-96 m-4">
      <img
       className="rounded-full h-32 w-32 xl:h-96 xl:w-96 cursor-pointer drop-shadow-lg bg-cover"

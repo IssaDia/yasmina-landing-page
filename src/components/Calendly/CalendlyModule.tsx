@@ -9,7 +9,7 @@ export const CalendlyModule: React.FC = () => {
   <div>
    <div id="schedule_form">
     <div
-     className="calendly-inline-widget sm:w-full h-screen"
+     className="calendly-inline-widget sm:w-full h-screen m-auto p-5 max-w-6xl"
      data-url="https://calendly.com/yasminacorman/entretien-offert-45min?month=2022-05"
     />
     <script

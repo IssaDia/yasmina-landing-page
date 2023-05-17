@@ -8,28 +8,28 @@ import Support from "../components/Support";
 const Home: React.FC = () => {
  return (
   <>
-   <div id="aboutme" className="pt-16">
+   <section id="aboutme">
     <SectionTitle title="Qui suis-je?" />
     <AboutMe />
-   </div>
+   </section>
 
-   <div id="personalSupport" className="pt-16">
+   <section id="personalSupport">
     {" "}
     <SectionTitle title="Mes accompagnments Personnalisés" />
     <Support />
-   </div>
+   </section>
 
-   <div id="mo2i" className="pt-16">
+   <section id="mo2i">
     {" "}
     <SectionTitle title="Le Mo2i pour tous" />
     <Services />
-   </div>
+   </section>
 
-   <div id="reviews" className="pt-16">
+   <section id="reviews">
     {" "}
     <SectionTitle title="Témoignages" />
     <Reviews />
-   </div>
+   </section>
   </>
  );
 };
